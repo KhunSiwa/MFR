@@ -104,21 +104,29 @@ function ImageFrame({
         {detections?.map((detection, index) => (
           <div
             key={`${detection.type}-${index}`}
-            className="absolute border-2 shadow-[0_0_0_9999px_rgba(2,6,23,0.16)]"
+            className="absolute"
             style={{
               left: `${detection.bbox[0]}%`,
               top: `${detection.bbox[1]}%`,
               width: `${detection.bbox[2]}%`,
               height: `${detection.bbox[3]}%`,
-              borderColor: defectColor(detection.type),
             }}
           >
             <span
-              className="absolute -top-7 left-0 whitespace-nowrap rounded px-2 py-1 text-xs font-semibold text-white"
-              style={{ backgroundColor: defectColor(detection.type) }}
+              className="absolute -inset-3 rounded-full border-[6px] border-dashed opacity-95"
+              style={{ borderColor: defectColor(detection.type) }}
+              aria-hidden
+            />
+            <span
+              className="absolute left-1/2 top-0 z-10 -translate-x-1/2 -translate-y-[calc(100%+0.4rem)] whitespace-nowrap rounded-md bg-slate-950 px-3 py-1.5 text-xs font-bold text-slate-100 shadow-xl dark:bg-slate-950"
             >
               {defectTypeLabel(detection.type)}
             </span>
+            <span
+              className="absolute left-1/2 top-0 h-3 w-1 -translate-x-1/2 -translate-y-1 rounded-full"
+              style={{ backgroundColor: defectColor(detection.type) }}
+              aria-hidden
+            />
           </div>
         ))}
       </div>

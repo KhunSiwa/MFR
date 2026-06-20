@@ -1,22 +1,25 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import { AppShell } from "@/components/layout/app-shell";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "แพลตฟอร์มติดตามสุขภาพผิวอาคาร",
-  description: "ระบบตรวจสอบผนังกระจกอาคารอัจฉริยะและวิเคราะห์ตำหนิด้วย AI",
+  title: "M.F.R. | แพลตฟอร์มสุขภาพผิวอาคารอัจฉริยะ",
+  description:
+    "Modul Facade Rover คือแพลตฟอร์มหุ่นยนต์ AI สำหรับตรวจสอบผิวอาคาร บำรุงรักษาเชิงคาดการณ์ และวิเคราะห์ข้อมูลอาคารอัจฉริยะ",
+  keywords: ["M.F.R.", "Modul Facade Rover", "หุ่นยนต์ AI", "ตรวจสอบผิวอาคาร", "i-NEW GEN"],
+  openGraph: {
+    title: "M.F.R. แพลตฟอร์มสุขภาพผิวอาคารอัจฉริยะ",
+    description: "หุ่นยนต์โมดูลาร์พร้อม AI inspection, predictive maintenance และ smart building analytics",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -25,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="th" className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
+    <html lang="th" className={inter.variable} suppressHydrationWarning>
       <body>
         <ThemeProvider>
           <AppShell>{children}</AppShell>

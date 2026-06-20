@@ -1,10 +1,10 @@
 import type { FutureModule, Mission, RobotCoreSystem, RobotModule, RobotTwin } from "@/lib/types";
 
 export const robotPlatform = {
-  name: "Vertical Surface Robot Platform",
+  name: "แพลตฟอร์มหุ่นยนต์ผิวแนวตั้ง",
   robotId: "VSRP-AX7-024",
   fleetStatus: "พร้อมปฏิบัติการ",
-  installedModule: "Inspection Module",
+  installedModule: "โมดูลตรวจสอบ",
   lastMaintenanceDate: "2026-05-12",
   coreSystems: [
     {
@@ -49,7 +49,7 @@ export const robotPlatform = {
 export const robotModules: RobotModule[] = [
   {
     id: "MOD-CLN-01",
-    name: "Cleaning Module",
+    name: "โมดูลทำความสะอาด",
     type: "Cleaning",
     status: "Available",
     installationDate: "2026-04-02",
@@ -62,7 +62,7 @@ export const robotModules: RobotModule[] = [
   },
   {
     id: "MOD-INS-02",
-    name: "Inspection Module",
+    name: "โมดูลตรวจสอบ",
     type: "Inspection",
     status: "Installed",
     installationDate: "2026-05-14",
@@ -75,7 +75,7 @@ export const robotModules: RobotModule[] = [
   },
   {
     id: "MOD-THM-03",
-    name: "Thermal Inspection Module",
+    name: "โมดูลตรวจสอบความร้อน",
     type: "Thermal Inspection",
     status: "Available",
     installationDate: "2026-03-18",
@@ -88,7 +88,7 @@ export const robotModules: RobotModule[] = [
   },
   {
     id: "MOD-ADV-04",
-    name: "Advertising Module",
+    name: "โมดูลโฆษณา/ประกาศ",
     type: "Advertising",
     status: "Maintenance",
     installationDate: "2026-02-22",
@@ -104,7 +104,7 @@ export const robotModules: RobotModule[] = [
 export const robotTwin: RobotTwin = {
   position: "ผนังทิศตะวันตก โซน Z-10 ชั้น 37",
   coordinates: { x: 68, y: 34, floor: 37 },
-  currentModule: "Inspection Module",
+  currentModule: "โมดูลตรวจสอบ",
   batteryStatus: 74,
   surfaceHealthData: "คะแนนโซน 48/100 พบตำหนิวิกฤต 3 รายการ",
   currentMission: "ตรวจสอบยอดอาคารทิศตะวันตก",
@@ -166,32 +166,32 @@ export const missions: Mission[] = [
 export const futureModules: FutureModule[] = [
   {
     id: "FUT-UV-01",
-    name: "UV Sterilization Module",
-    category: "Future Concepts",
+    name: "โมดูลฆ่าเชื้อ UV",
+    category: "แนวคิดอนาคต",
     purpose: "ฆ่าเชื้อพื้นผิวกระจกและพื้นที่สัมผัสภายนอกอาคารด้วยแสง UV-C",
     expectedOutputs: ["พื้นที่ฆ่าเชื้อ", "ค่าความเข้ม UV", "บันทึกความปลอดภัย"],
     readiness: 42,
   },
   {
     id: "FUT-COAT-02",
-    name: "Surface Coating Module",
-    category: "Future Concepts",
+    name: "โมดูลเคลือบผิว",
+    category: "แนวคิดอนาคต",
     purpose: "เคลือบสารป้องกันคราบน้ำและฝุ่นบนผิวกระจกแนวตั้ง",
     expectedOutputs: ["ความหนาฟิล์มเคลือบ", "พื้นที่เคลือบ", "คุณภาพการยึดเกาะ"],
     readiness: 35,
   },
   {
     id: "FUT-EMG-03",
-    name: "Emergency Display Module",
-    category: "Future Concepts",
+    name: "โมดูลแสดงผลฉุกเฉิน",
+    category: "แนวคิดอนาคต",
     purpose: "แสดงข้อความฉุกเฉินบนผนังอาคารในเหตุการณ์อพยพหรือแจ้งเตือนสาธารณะ",
     expectedOutputs: ["สถานะประกาศ", "เวลาทำงาน", "พื้นที่มองเห็น"],
     readiness: 51,
   },
   {
     id: "FUT-ENV-04",
-    name: "Environmental Sensor Module",
-    category: "Future Concepts",
+    name: "โมดูลเซนเซอร์สิ่งแวดล้อม",
+    category: "แนวคิดอนาคต",
     purpose: "เก็บข้อมูลฝุ่น PM2.5 ความชื้น ลม และคุณภาพอากาศรอบผนังอาคาร",
     expectedOutputs: ["แผนที่คุณภาพอากาศ", "สถิติสภาพแวดล้อม", "แจ้งเตือนสภาพอากาศเสี่ยง"],
     readiness: 58,

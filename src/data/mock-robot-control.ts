@@ -36,7 +36,19 @@ export type GalleryImage = {
 };
 
 const statuses: RobotSystemStatus[] = ["Idle", "Moving", "Cleaning", "Inspecting", "Charging"];
-const inspectionTypes = ["Facade Crack Scan", "Sealant Inspection", "Thermal Survey", "Surface Contamination"];
+const inspectionTypes = ["สแกนรอยแตกร้าวผิวอาคาร", "ตรวจซิลิโคน", "สำรวจความร้อน", "ตรวจคราบสกปรกบนพื้นผิว"];
+
+function robotStatusLabel(status: RobotSystemStatus) {
+  const labels: Record<RobotSystemStatus, string> = {
+    Idle: "พักระบบ",
+    Moving: "เคลื่อนที่",
+    Cleaning: "ทำความสะอาด",
+    Inspecting: "ตรวจสอบ",
+    Charging: "ชาร์จ",
+  };
+
+  return labels[status];
+}
 
 function clamp(value: number, min: number, max: number) {
   return Math.min(max, Math.max(min, value));
@@ -76,6 +88,7 @@ export function makeCameraFrame(index = 0, seed = Date.now()): CameraFrame {
   const p = phase(seed) - index;
   const zone = db.facadeZones[Math.abs(p) % db.facadeZones.length];
   const status = statuses[Math.abs(p + 3) % statuses.length];
+  const statusLabel = robotStatusLabel(status);
   const battery = clamp(getRobotStatus(seed - index * 1000).batteryLevel, 10, 100);
   const timestamp = new Date(seed - index * 1000).toISOString();
   const crackX = 28 + (Math.abs(p) % 35);
@@ -112,9 +125,9 @@ export function makeCameraFrame(index = 0, seed = Date.now()): CameraFrame {
         <text x="${crackX * 12 - 58}" y="${markerY * 7 - 17}" fill="#e0f2fe" font-family="Arial" font-size="20" font-weight="700">AI ROI ${String(Math.abs(p) % 100).padStart(2, "0")}</text>
       </g>
       <g font-family="Arial" fill="#e2e8f0">
-        <text x="42" y="54" font-size="26" font-weight="700">VSRP CAMERA FEED</text>
+        <text x="42" y="54" font-size="26" font-weight="700">ภาพกล้อง VSRP</text>
         <text x="42" y="92" font-size="18" fill="#67e8f9">${zone.name} / ${zone.floorRange}</text>
-        <text x="42" y="674" font-size="18" fill="#cbd5e1">BAT ${battery}%  SIG ${getRobotStatus(seed).signalStrength}%  MODE ${status.toUpperCase()}</text>
+        <text x="42" y="674" font-size="18" fill="#cbd5e1">แบต ${battery}%  สัญญาณ ${getRobotStatus(seed).signalStrength}%  โหมด ${statusLabel}</text>
         <text x="966" y="54" font-size="18" fill="#cbd5e1">${timestamp}</text>
       </g>
       <g stroke="#22d3ee" stroke-width="3" opacity="0.9">
@@ -138,7 +151,7 @@ export function getCameraStream() {
   return {
     latest: makeCameraFrame(0, now),
     history: Array.from({ length: 8 }, (_, index) => makeCameraFrame(index, now)),
-    roadmap: ["WebSocket Streaming", "RTSP Streaming", "ESP32-CAM Integration"],
+    roadmap: ["สตรีมผ่าน WebSocket", "สตรีมผ่าน RTSP", "เชื่อมต่อ ESP32-CAM"],
   };
 }
 
@@ -160,6 +173,6 @@ export function getGalleryImages(): GalleryImage[] {
 
 export function describeDetections(imageId: string) {
   const image = db.inspectionImages.find((item) => item.id === imageId);
-  if (!image || image.detections.length === 0) return "No AI detections";
+  if (!image || image.detections.length === 0) return "ไม่พบตำหนิจาก AI";
   return image.detections.map((detection) => defectTypeLabel(detection.type)).join(", ");
 }

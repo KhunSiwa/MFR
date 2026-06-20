@@ -29,6 +29,7 @@ export function LiveCameraConsole({ initialStream }: { initialStream: CameraStre
   }, []);
 
   const latest = stream.latest;
+  const latestStatus = robotStatusLabel(latest.robotStatus);
 
   function openFullscreen() {
     const element = document.getElementById("robot-camera-feed");
@@ -41,17 +42,17 @@ export function LiveCameraConsole({ initialStream }: { initialStream: CameraStre
         <CardHeader className="border-b border-slate-200 dark:border-slate-800">
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div>
-              <CardTitle>Robot Camera Feed</CardTitle>
-              <CardDescription>Simulated MVP image stream refreshing every second from the mock API</CardDescription>
+              <CardTitle>ภาพจากกล้องหุ่นยนต์</CardTitle>
+              <CardDescription>สตรีมภาพจำลองของ MVP ที่อัปเดตทุกวินาทีจาก mock API</CardDescription>
             </div>
-            <Badge tone={recording ? "critical" : "good"}>{recording ? "Recording" : "Live"}</Badge>
+            <Badge tone={recording ? "critical" : "good"}>{recording ? "กำลังบันทึก" : "สด"}</Badge>
           </div>
         </CardHeader>
         <CardContent className="space-y-4 p-5">
           <div id="robot-camera-feed" className="relative overflow-hidden rounded-lg border border-slate-800 bg-slate-950">
             <Image
               src={latest.imageUrl}
-              alt="Robot camera feed"
+              alt="ภาพจากกล้องหุ่นยนต์"
               width={1280}
               height={720}
               unoptimized
@@ -59,12 +60,12 @@ export function LiveCameraConsole({ initialStream }: { initialStream: CameraStre
             />
             <div className="absolute left-4 top-4 flex flex-wrap gap-2">
               <OverlayPill icon={Clock} value={new Date(latest.timestamp).toLocaleTimeString()} />
-              <OverlayPill icon={RadioTower} value={latest.robotStatus} />
+              <OverlayPill icon={RadioTower} value={latestStatus} />
               <OverlayPill icon={BatteryMedium} value={`${latest.batteryStatus}%`} />
             </div>
             <div className="absolute bottom-4 left-4 right-4 flex flex-wrap items-center justify-between gap-3 text-white">
               <div>
-                <div className="text-xs uppercase text-cyan-200">Position</div>
+                <div className="text-xs uppercase text-cyan-200">ตำแหน่ง</div>
                 <div className="text-sm font-semibold">{latest.position}</div>
               </div>
               <div className="font-mono text-xs text-slate-300">{latest.id}</div>
@@ -72,15 +73,15 @@ export function LiveCameraConsole({ initialStream }: { initialStream: CameraStre
           </div>
 
           <div className="flex flex-wrap gap-2">
-            <Button onClick={openFullscreen} variant="secondary"><Maximize2 className="h-4 w-4" />Fullscreen View</Button>
-            <Button onClick={() => setSnapshotCount((count) => count + 1)} variant="secondary"><Camera className="h-4 w-4" />Snapshot Button</Button>
-            <Button onClick={() => setRecording((value) => !value)} variant={recording ? "destructive" : "default"}><Video className="h-4 w-4" />Recording Button</Button>
+            <Button onClick={openFullscreen} variant="secondary"><Maximize2 className="h-4 w-4" />ดูเต็มจอ</Button>
+            <Button onClick={() => setSnapshotCount((count) => count + 1)} variant="secondary"><Camera className="h-4 w-4" />บันทึกภาพนิ่ง</Button>
+            <Button onClick={() => setRecording((value) => !value)} variant={recording ? "destructive" : "default"}><Video className="h-4 w-4" />บันทึกวิดีโอ</Button>
           </div>
 
           <div className="grid gap-3 md:grid-cols-3">
-            <MetaTile label="Timestamp" value={new Date(latest.timestamp).toLocaleString()} />
-            <MetaTile label="Robot Status" value={latest.robotStatus} />
-            <MetaTile label="Battery Status" value={`${latest.batteryStatus}%`} />
+            <MetaTile label="เวลา" value={new Date(latest.timestamp).toLocaleString()} />
+            <MetaTile label="สถานะหุ่นยนต์" value={latestStatus} />
+            <MetaTile label="สถานะแบตเตอรี่" value={`${latest.batteryStatus}%`} />
           </div>
         </CardContent>
       </Card>
@@ -88,8 +89,8 @@ export function LiveCameraConsole({ initialStream }: { initialStream: CameraStre
       <div className="space-y-5">
         <Card>
           <CardHeader>
-            <CardTitle>Image History</CardTitle>
-            <CardDescription>Latest simulated frames retained by the MVP stream</CardDescription>
+            <CardTitle>ประวัติภาพ</CardTitle>
+            <CardDescription>เฟรมจำลองล่าสุดที่เก็บไว้ในสตรีมของ MVP</CardDescription>
           </CardHeader>
           <CardContent className="space-y-3">
             {stream.history.map((frame) => (
@@ -110,24 +111,36 @@ export function LiveCameraConsole({ initialStream }: { initialStream: CameraStre
 
         <Card>
           <CardHeader>
-            <CardTitle>Streaming Roadmap</CardTitle>
-            <CardDescription>Planned production camera options after MVP</CardDescription>
+            <CardTitle>แผนพัฒนาสตรีมกล้อง</CardTitle>
+            <CardDescription>ตัวเลือกกล้องสำหรับเวอร์ชันผลิตจริงหลัง MVP</CardDescription>
           </CardHeader>
           <CardContent className="space-y-3">
             {stream.roadmap.map((item) => (
               <div key={item} className="flex items-center justify-between rounded-lg border border-slate-200 p-3 text-sm dark:border-slate-800">
                 <span>{item}</span>
-                <Badge tone="muted">Future</Badge>
+                <Badge tone="muted">อนาคต</Badge>
               </div>
             ))}
             <div className="rounded-lg bg-slate-100 p-3 text-sm text-slate-600 dark:bg-slate-900 dark:text-slate-300">
-              Captured snapshots this session: <span className="font-semibold">{snapshotCount}</span>
+              ภาพนิ่งที่บันทึกในรอบนี้: <span className="font-semibold">{snapshotCount}</span>
             </div>
           </CardContent>
         </Card>
       </div>
     </div>
   );
+}
+
+function robotStatusLabel(status: string) {
+  const labels: Record<string, string> = {
+    Idle: "พักระบบ",
+    Moving: "กำลังเคลื่อนที่",
+    Cleaning: "กำลังทำความสะอาด",
+    Inspecting: "กำลังตรวจสอบ",
+    Charging: "กำลังชาร์จ",
+  };
+
+  return labels[status] ?? status;
 }
 
 function OverlayPill({ icon: Icon, value }: { icon: ElementType; value: string }) {
