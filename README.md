@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vertical Surface Robot Platform
 
-## Getting Started
+Modern modular robotics operating platform for vertical building surfaces. The app models a core robot unit with interchangeable modules for cleaning, inspection, thermal inspection, advertising, digital twin operations, mission management, facade health, defect management, inspection history, and printable reports.
 
-First, run the development server:
+## Stack
+
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- shadcn/ui-style reusable primitives
+- Recharts
+- Lucide Icons
+- next-themes dark/light mode
+- Local JSON mock database
+- Mock API routes
+
+## Run
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```txt
+src/app
+  page.tsx                         Platform overview dashboard and surface health map
+  modules/page.tsx                 Module management page
+  module-dashboard/page.tsx        Installed module dashboard
+  digital-twin/page.tsx            Robot digital twin page
+  missions/page.tsx                Mission management page
+  roadmap/page.tsx                 Future module roadmap
+  defects/page.tsx                 Defect management page
+  ai-analysis/page.tsx             AI image analysis page
+  history/page.tsx                 Inspection history and trend page
+  report/page.tsx                  Printable building health report
+  api/*/route.ts                   Mock API endpoints
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+src/components
+  ai/analysis-panel.tsx            Original/detected image review
+  charts/*                         Gauge and Recharts visualizations
+  defects/defect-table.tsx         Filterable defect table
+  facade/surface-health-map.tsx    Clickable facade zone map
+  history/history-timeline.tsx     Inspection timeline
+  layout/*                         App shell, header, theme controls
+  robot/*                          Robot platform, module, and mission components
+  report/*                         Printable report UI
+  ui/*                             shadcn/ui-style primitives
 
-## Learn More
+src/data
+  database.json                    1 building, 10 facade zones, 50 images, 20 defects
+  api.ts                           Typed mock data access helpers
+  robot-platform.ts                Core robot, modules, missions, twin, roadmap mock data
 
-To learn more about Next.js, take a look at the following resources:
+src/lib
+  types.ts                         TypeScript domain types
+  robot-labels.ts                  Thai labels for robot platform statuses
+  utils.ts                         Shared formatting and risk helpers
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Mock API
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `/api/building`
+- `/api/facade-zones`
+- `/api/defects`
+- `/api/inspection-images`
+- `/api/inspection-history`
+- `/api/report`
+- `/api/robot-platform`
+- `/api/modules`
+- `/api/digital-twin`
+- `/api/missions`
+- `/api/roadmap`
