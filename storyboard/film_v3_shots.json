@@ -1,0 +1,252 @@
+{
+  "project": "Module Facade Rover (MFR) — Film V3",
+  "project_th": "หุ่นยนต์ปฏิบัติงานบนผนังอาคารแบบโมดูลาร์",
+  "competition": "Thailand New Gen Inventors Award 2027 (I - New Gen Award 2027)",
+  "school": "โรงเรียนอัสสัมชัญธนบุรี",
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "total_sec": 168.0,
+  "total_frames": 4032,
+  "audio_master": "/Users/Siwakorn/Downloads/mfr/MFR_PRODUCTION/06_VIDEO_AUDIO/Audio_Mix/mfr_master_mix_168s_v2.m4a",
+  "shots": [
+    {
+      "id": "S01", "act": 1, "t_in": 0.0, "t_out": 4.5, "speaker": "—",
+      "kind": "BLENDER_BUILDING", "title": "Glass Skyscraper Establishing",
+      "badge": "CONCEPTUAL ARCHITECTURE VISUALIZATION",
+      "badge_color": "#D97706",
+      "th": "หุ่นยนต์ปฏิบัติงานบนผนังอาคารแบบโมดูลาร์ (Module Facade Rover)",
+      "en": "Full-Scale Glass Curtain-Wall Tower — Establishing Shot",
+      "notes": "Low-angle crane tilt-up in MFR_FACADE_BUILDING_V3.blend (Cam_Wide)"
+    },
+    {
+      "id": "S02", "act": 1, "t_in": 4.5, "t_out": 9.5, "speaker": "—",
+      "kind": "BLENDER_FACADE", "title": "Suspended MFR Concept Reveal",
+      "badge": "CONCEPTUAL FACADE OPERATION — NOT FIELD VALIDATED",
+      "badge_color": "#D97706",
+      "th": "ภาพจำลองแนวคิดการแขวนสลิงนิรภัยคู่เพื่อตรวจสอบผนังกระจกอาคารสูง",
+      "en": "Conceptual suspended rover operation with dual rooftop safety tether",
+      "notes": "Dramatic exterior reveal in MFR_SUSPENDED_ROBOT_V3.blend (Cam_Reveal)"
+    },
+    {
+      "id": "S03", "act": 1, "t_in": 9.5, "t_out": 16.0, "speaker": "P1",
+      "speaker_name": "นายเมธาวินทร์ ศิวะพรพันธ์ (ม.4)",
+      "kind": "PRESENTER_SLATE", "title": "P1 Opening — High-Rise Risk",
+      "badge": "T1 LIVE PRESENTER PLATE PENDING",
+      "badge_color": "#0284C7",
+      "th": "ทุกวันนี้ อาคารสูงในเมืองใช้ผนังกระจกมากขึ้น แต่การตรวจสอบยังต้องอาศัยคนโรยตัวจากที่สูง",
+      "en": "Modern high-rises use vast glass facades, yet inspection still forces people to rappel at height.",
+      "notes": "Live camera plate P1 by glass curtain window; record real studio take."
+    },
+    {
+      "id": "S04", "act": 1, "t_in": 16.0, "t_out": 23.5, "speaker": "P1 (VO)",
+      "speaker_name": "นายเมธาวินทร์ ศิวะพรพันธ์ (VO)",
+      "kind": "GRAPHIC_DEFECTS", "title": "Four Target Facade Defects",
+      "badge": "AI 06 TARGET TAXONOMY",
+      "badge_color": "#0284C7",
+      "th": "ทั้งรอยร้าวขอบกระจก ซิลิโคนเสื่อม คราบสนิม และรอยน้ำรั่ว ย่อมเสี่ยงต่อชีวิตและต้นทุนสูง",
+      "en": "Cracks, sealant deterioration, rust, and water stains create life safety risks and high upkeep cost.",
+      "notes": "Animated 4-quadrant defect taxonomy plate."
+    },
+    {
+      "id": "S05", "act": 1, "t_in": 23.5, "t_out": 29.0, "speaker": "P1",
+      "speaker_name": "นายเมธาวินทร์ ศิวะพรพันธ์ (ม.4)",
+      "kind": "TITLE_REVEAL", "title": "Official MFR Title Reveal",
+      "badge": "I-NEW GEN AWARD 2027 — ACT 1 CLIMAX",
+      "badge_color": "#2563EB",
+      "th": "ทีมโรงเรียนอัสสัมชัญธนบุรี จึงพัฒนา Module Facade Rover (MFR) หุ่นยนต์แบบโมดูลาร์",
+      "en": "Assumption College Thonburi developed Module Facade Rover (MFR).",
+      "notes": "P1 intro into MFR logo + official project title reveal at 29.0 s beat."
+    },
+    {
+      "id": "S06", "act": 2, "t_in": 29.0, "t_out": 35.0, "speaker": "P1 (VO)",
+      "speaker_name": "นายเมธาวินทร์ ศิวะพรพันธ์ (VO)",
+      "kind": "BLENDER_STUDIO", "title": "Tabletop Studio Hero Reveal",
+      "badge": "T2 VERIFIED CAD: MFR.step (1,370 NODES)",
+      "badge_color": "#059669",
+      "th": "โมเดลจริงจาก CAD MFR.step ขนาดกะทัดรัด 224 x 220 x 275 มม. รองรับการต่อโมดูลบนฐานเดียว",
+      "en": "Verified MFR.step CAD (224 x 220 x 275 mm) uniting drive, impeller, and modular carrier.",
+      "notes": "MFR_FILM_V3.blend Cam_Tabletop_Wide with miniature glass tower prop."
+    },
+    {
+      "id": "S07", "act": 2, "t_in": 35.0, "t_out": 43.0, "speaker": "P1 (VO)",
+      "speaker_name": "นายเมธาวินทร์ ศิวะพรพันธ์ (VO)",
+      "kind": "BLENDER_STUDIO", "title": "360 Studio Turntable Hero",
+      "badge": "T2 VERIFIED CAD: 363,001 TRIANGLES",
+      "badge_color": "#059669",
+      "th": "ตัวฐานแยกชั้นกลไกและอิเล็กทรอนิกส์ชัดเจน ช่วยให้ประกอบ ซ่อมบำรุง และพัฒนาต่อยอดได้สะดวก",
+      "en": "Tiered enclosure separates drive mechanics from electronics for straightforward service and swaps.",
+      "notes": "MFR_FILM_V3.blend Cam_Turntable_Hero full 360 rotation + callout."
+    },
+    {
+      "id": "S08", "act": 2, "t_in": 43.0, "t_out": 53.0, "speaker": "P1 -> P2",
+      "speaker_name": "เมธาวินทร์ -> ศิวกร รักหนู (ม.4)",
+      "kind": "PRESENTER_HANDOFF", "title": "P1 to P2 Engineering Handoff",
+      "badge": "T1 PRESENTER HANDOFF SLATE",
+      "badge_color": "#0284C7",
+      "th": "[P1] แนวคิดที่ดีต้องพิสูจน์ได้จริง | [P2] มาดูรายละเอียดกลไกและวงจรใน CAD MFR.step ครับ",
+      "en": "[P1] A sound concept needs real engineering proof. | [P2] Let's inspect MFR.step in detail.",
+      "notes": "Two-presenter handoff beside MFR.step orthographic engineering views."
+    },
+    {
+      "id": "S09", "act": 3, "t_in": 53.0, "t_out": 60.5, "speaker": "P2",
+      "speaker_name": "นายศิวกร รักหนู (ม.4)",
+      "kind": "BLENDER_STUDIO", "title": "7-Group Exploded CAD Animation",
+      "badge": "T2 VERIFIED CAD EXPLOSION",
+      "badge_color": "#059669",
+      "th": "แยก 1,370 โหนดเป็น 7 กลุ่มหลัก: ฐานล่าง, 4 มอเตอร์, 4 ล้อ, ชุดใบพัด, กล่องบน, PCB, ฝาบน",
+      "en": "Exploding 1,370 CAD nodes into 7 subassemblies: Chassis, 4 Motors, 4 Wheels, Impeller, Bay, PCB, Cover.",
+      "notes": "MFR_FILM_V3.blend Cam_Exploded animated subassembly separation."
+    },
+    {
+      "id": "S10", "act": 3, "t_in": 60.5, "t_out": 69.5, "speaker": "P2 (VO)",
+      "speaker_name": "นายศิวกร รักหนู (VO)",
+      "kind": "BLENDER_STUDIO", "title": "Precision Re-Assembly Sequence",
+      "badge": "T2 VERIFIED CAD ASSEMBLY",
+      "badge_color": "#059669",
+      "th": "ประกอบกลับเข้าชุดอย่างสมมาตร ตั้งแต่ชุดล้อขนาด 60 มม. จนถึงแผ่นฐานโมดูลด้านบน 175 x 215 มม.",
+      "en": "Coaxial re-assembly locking Ø60 mm wheels through the upper bay and 175 x 215 mm top cover plate.",
+      "notes": "MFR_FILM_V3.blend Cam_Assembly smooth mechanical lock-in."
+    },
+    {
+      "id": "S11", "act": 3, "t_in": 69.5, "t_out": 76.0, "speaker": "P2 (VO)",
+      "speaker_name": "นายศิวกร รักหนู (VO)",
+      "kind": "BLENDER_STUDIO", "title": "ESP32-S3-WROOM Electronics Macro",
+      "badge": "T2 VERIFIED PCB: ESP32-S3-WROOM",
+      "badge_color": "#059669",
+      "th": "ภายในชั้นบนติดตั้ง ESP32-S3-WROOM บนแผ่นวงจร 82 x 82 มม. พร้อม USB-C, WS2812B และขั้ว 2 พิน",
+      "en": "Inside sits ESP32-S3-WROOM on an 82 x 82 mm carrier PCB with USB-C, WS2812B LEDs, and screw terminals.",
+      "notes": "MFR_FILM_V3.blend Cam_Macro_ESP32 top cover lifted showing PCB details."
+    },
+    {
+      "id": "S12", "act": 3, "t_in": 76.0, "t_out": 82.5, "speaker": "P2 (VO)",
+      "speaker_name": "นายศิวกร รักหนู (VO)",
+      "kind": "BLENDER_STUDIO", "title": "Impeller & Drive Wheel Macro",
+      "badge": "T2 VERIFIED IMPELLER Ø84 mm + WHEELS Ø60 mm",
+      "badge_color": "#059669",
+      "th": "ชุดใบพัด 8 กลีบขนาด 84 มม. พร้อมท่ออากาศและตะแกรง ศึกษาแรงดูดคู่กับล้อ 60 มม. ทั้ง 4 จุด",
+      "en": "Ø84 mm 8-blade ducted impeller and protective grilles paired with four Ø60 mm motorized drive wheels.",
+      "notes": "MFR_FILM_V3.blend Cam_Macro_Impeller_Wheel low-angle hero macro."
+    },
+    {
+      "id": "S13", "act": 3, "t_in": 82.5, "t_out": 89.0, "speaker": "P2 (VO)",
+      "speaker_name": "นายศิวกร รักหนู (VO)",
+      "kind": "GRAPHIC_ARCHITECTURE", "title": "Power & Safety Interlock Isolation",
+      "badge": "T2 SAFETY ARCHITECTURE",
+      "badge_color": "#059669",
+      "th": "แยกภาคจ่ายกำลังมอเตอร์จากวงจร ESP32-S3 และแยกสายสลิงนิรภัยกับ Emergency Cutoff ออกจาก AI",
+      "en": "Power rails are isolated from ESP32-S3 logic; physical E-Stop and safety tether bypass AI completely.",
+      "notes": "Technical architecture diagram plate."
+    },
+    {
+      "id": "S14", "act": 3, "t_in": 89.0, "t_out": 95.5, "speaker": "P2 (VO)",
+      "speaker_name": "นายศิวกร รักหนู (VO)",
+      "kind": "GRAPHIC_AI", "title": "AI 06 Defect Classifier Smoke Test",
+      "badge": "T3 PIPELINE SMOKE-TEST — ADVISORY ONLY",
+      "badge_color": "#7C3AED",
+      "th": "AI 06 คัดกรองความบกพร่อง 5 ประเภท ปัจจุบันทดสอบแบบ Smoke-Test บนภาพจำลอง เพื่อช่วยผู้ควบคุม",
+      "en": "AI 06 classifies 5 defect classes—verified on synthetic smoke-test fixture only as operator advisory.",
+      "notes": "Uses verified QA_Eval_Sample_Predictions.png with clear smoke-test disclaimer."
+    },
+    {
+      "id": "S15", "act": 3, "t_in": 95.5, "t_out": 101.5, "speaker": "P2 (VO)",
+      "speaker_name": "นายศิวกร รักหนู (VO)",
+      "kind": "GRAPHIC_DASHBOARD", "title": "FastAPI & Web Operator Dashboard",
+      "badge": "T3 OPERATOR-IN-THE-LOOP DASHBOARD",
+      "badge_color": "#7C3AED",
+      "th": "ผลวิเคราะห์ถูกส่งผ่าน FastAPI ไปยังแดชบอร์ดบนเว็บ ให้ผู้ตรวจสอบยืนยันทุกคำสั่งอย่างโปร่งใส",
+      "en": "Predictions and telemetry stream via FastAPI to a browser dashboard with full operator confirmation.",
+      "notes": "Interactive telemetry UI schematic card."
+    },
+    {
+      "id": "S16", "act": 4, "t_in": 101.5, "t_out": 108.0, "speaker": "P3",
+      "speaker_name": "นายพีรวิชช์ หาวนพันธ์ (ม.4)",
+      "kind": "PRESENTER_SLATE", "title": "P3 Modular Top-Bay Concept",
+      "badge": "T1 PRESENTER + T4 MODULAR PAYLOAD",
+      "badge_color": "#D97706",
+      "th": "จุดเด่นของ MFR คือฐานแบบโมดูลาร์ สลับติดตั้งกล้องตรวจสอบหรือหัวทำความสะอาดบนฝาบนได้",
+      "en": "MFR's modular top plate supports swappable inspection optics today and future maintenance tools.",
+      "notes": "Live P3 studio take alongside modular top plate callout."
+    },
+    {
+      "id": "S17", "act": 4, "t_in": 108.0, "t_out": 115.5, "speaker": "P3 (VO)",
+      "speaker_name": "นายพีรวิชช์ หาวนพันธ์ (VO)",
+      "kind": "BLENDER_FACADE", "title": "Full-Scale Suspended Facade Climb",
+      "badge": "CONCEPTUAL FACADE OPERATION — NOT FIELD VALIDATED",
+      "badge_color": "#D97706",
+      "th": "ภาพจำลองแนวคิดแสดงการไต่ผนังกระจกอาคารสูง พร้อมสายสลิงคู่จากดาดฟ้าเป็นระบบสำรองนิรภัย",
+      "en": "Conceptual exterior tower climb with redundant dual rooftop tether cables—not field validated.",
+      "notes": "MFR_SUSPENDED_ROBOT_V3.blend Cam_Facade_Wide ascending vertical wall."
+    },
+    {
+      "id": "S18", "act": 4, "t_in": 115.5, "t_out": 121.5, "speaker": "P3 (VO)",
+      "speaker_name": "นายพีรวิชช์ หาวนพันธ์ (VO)",
+      "kind": "BLENDER_FACADE", "title": "Rooftop Davit & Tether Anchor Close-Up",
+      "badge": "CONCEPTUAL FACADE OPERATION — NOT FIELD VALIDATED",
+      "badge_color": "#D97706",
+      "th": "ชุดกว้านและจุดยึดบนดาดฟ้าออกแบบในแนวคิดให้รับน้ำหนักสำรองคู่กัน ป้องกันความเสี่ยงจากการตก",
+      "en": "Conceptual overhead rooftop davit, winch pulley, and dual cables guarding against vacuum loss.",
+      "notes": "MFR_SUSPENDED_ROBOT_V3.blend Cam_Tether_Close."
+    },
+    {
+      "id": "S19", "act": 4, "t_in": 121.5, "t_out": 129.0, "speaker": "P3 (VO)",
+      "speaker_name": "นายพีรวิชช์ หาวนพันธ์ (VO)",
+      "kind": "BLENDER_FACADE", "title": "Wheel-to-Glass Grazing Contact Macro",
+      "badge": "CONCEPTUAL FACADE OPERATION — NOT FIELD VALIDATED",
+      "badge_color": "#D97706",
+      "th": "ในแนวคิด แรงกดจากชุดใบพัดและแรงตึงสลิงช่วยให้ล้อ 60 มม. ทั้ง 4 สัมผัสผิวกระจกอย่างมั่นคง",
+      "en": "Grazing profile showing Ø60 mm drive wheels meeting double-glazed curtain wall glass at Y=0.",
+      "notes": "MFR_SUSPENDED_ROBOT_V3.blend Cam_Wheel_Glass with wheel spin."
+    },
+    {
+      "id": "S20", "act": 4, "t_in": 129.0, "t_out": 135.0, "speaker": "P3 (VO)",
+      "speaker_name": "นายพีรวิชช์ หาวนพันธ์ (VO)",
+      "kind": "BLENDER_FACADE", "title": "Dynamic Vertical Facade Tracking",
+      "badge": "CONCEPTUAL FACADE OPERATION — NOT FIELD VALIDATED",
+      "badge_color": "#D97706",
+      "th": "ช่วยลดความเสี่ยงให้เจ้าหน้าที่ในการสำรวจเบื้องต้น โดยต้องผ่านการทดสอบทางกลจริงก่อนใช้งาน",
+      "en": "Envisioned workflow reduces human rope-access exposure once vertical mechanics are validated.",
+      "notes": "MFR_SUSPENDED_ROBOT_V3.blend Cam_Track_Climb ascending mullions."
+    },
+    {
+      "id": "S21", "act": 5, "t_in": 135.0, "t_out": 144.5, "speaker": "P2",
+      "speaker_name": "นายศิวกร รักหนู (ม.4)",
+      "kind": "PRESENTER_SLATE", "title": "P2 Candid Bench Status",
+      "badge": "T1/T2 HONEST DEVELOPMENT STATUS",
+      "badge_color": "#0284C7",
+      "th": "สถานะปัจจุบัน: CAD MFR.step และซอฟต์แวร์ AI พร้อมแล้ว ส่วนตัวหุ่นยนต์จริงอยู่ระหว่างการประกอบ",
+      "en": "Honest status: MFR.step CAD and AI pipeline are built; physical robot assembly is actively underway.",
+      "notes": "Live P2 bench/studio take next to Form 2 fact table (03 Jun BE 2569 - Present)."
+    },
+    {
+      "id": "S22", "act": 5, "t_in": 144.5, "t_out": 152.5, "speaker": "P4",
+      "speaker_name": "นายธนกฤต ธนพันธ์ (ม.4)",
+      "kind": "PRESENTER_SLATE", "title": "P4 Unresolved Engineering Gaps",
+      "badge": "T1/T2 CANDID LIMITATIONS",
+      "badge_color": "#DC2626",
+      "th": "ความท้าทายสำคัญคือ การทำโครงยึดระยะ 127.9 มม. การทดสอบแรงดูดบนกระจก และเก็บภาพอาคารจริง",
+      "en": "Open challenges: fabricating frame standoffs, testing real-glass adhesion, and collecting facade data.",
+      "notes": "Live P4 studio take stating clear physical validation boundaries."
+    },
+    {
+      "id": "S23", "act": 6, "t_in": 152.5, "t_out": 160.5, "speaker": "P4",
+      "speaker_name": "นายธนกฤต ธนพันธ์ (ม.4)",
+      "kind": "GRAPHIC_ROADMAP", "title": "Three-Phase Validation Roadmap",
+      "badge": "T4 ENGINEERING ROADMAP",
+      "badge_color": "#059669",
+      "th": "ก้าวต่อไป: ทดสอบขับเคลื่อนพื้นราบ ทดสอบชุดดูดยึดพร้อมสลิง และเก็บข้อมูลภาพจริงพัฒนา AI 06",
+      "en": "Next: 1) Bench ESP32-S3 drive test, 2) Tethered suction test rig, 3) Real facade AI benchmark.",
+      "notes": "P4 roadmap overlay paired with studio hero silhouette."
+    },
+    {
+      "id": "S24", "act": 6, "t_in": 160.5, "t_out": 168.0, "speaker": "P4 + All",
+      "speaker_name": "ทีม MFR โรงเรียนอัสสัมชัญธนบุรี",
+      "kind": "END_CREDITS", "title": "Official Competition Credits",
+      "badge": "I-NEW GEN AWARD 2027 — ASSUMPTION COLLEGE THONBURI",
+      "badge_color": "#2563EB",
+      "th": "ทีม MFR โรงเรียนอัสสัมชัญธนบุรี พัฒนาวิศวกรรมอย่างรับผิดชอบเพื่อความปลอดภัย ขอบคุณครับ",
+      "en": "Team MFR, Assumption College Thonburi — Thank you.",
+      "notes": "MFR_logo_original.png + full 4 inventors + 2 advisors + official credits."
+    }
+  ]
+}
