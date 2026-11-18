@@ -8,6 +8,7 @@ import {
   FileText,
   Gauge,
   Home,
+  Layers,
   LayoutDashboard,
   Settings,
   ShieldCheck,
@@ -21,6 +22,7 @@ export const coreNavigation = [
   { href: "/dashboard", label: "แดชบอร์ด", icon: LayoutDashboard },
   { href: "/robot", label: "หุ่นยนต์", icon: Bot },
   { href: "/inspection", label: "ตรวจสอบ", icon: Camera },
+  { href: "/work-planning", label: "การวางแผนการทำงาน", icon: Layers },
   { href: "/ai-analysis", label: "วิเคราะห์ AI", icon: BrainCircuit },
   { href: "/reports", label: "รายงาน", icon: FileText },
   { href: "/settings", label: "ตั้งค่า", icon: Settings },
@@ -59,7 +61,7 @@ export const dashboardKpis = [
 export const aiRecommendations = [
   "จัดลำดับโซนผิวอาคารที่คะแนนต่ำกว่า 70 ให้ตรวจซ้ำก่อนรอบฝนถัดไป",
   "วางแผนตรวจซิลิโคนบริเวณผนังทิศเหนือและทิศตะวันตกของอาคารสูง",
-  "ใช้โมดูลทำความสะอาดก่อนสแกนซ้ำ เพื่อแยกคราบสกปรกออกจากความเสียหายจริง",
+  "ใช้ชุดปฏิบัติการทำความสะอาดก่อนสแกนซ้ำ เพื่อแยกคราบสกปรกออกจากความเสียหายจริง",
   "ส่งออกรายงานสำหรับเจ้าของอาคารหลังดำเนินการบำรุงรักษาเสร็จ",
 ];
 

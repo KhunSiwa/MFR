@@ -16,7 +16,7 @@ const starterMessages: Message[] = [
     id: "welcome",
     role: "assistant",
     content:
-      "สวัสดีครับ ผมคือผู้ช่วย AI ของ M.F.R. ถามผมได้เรื่องสรุปแดชบอร์ด จุดเสี่ยง การตรวจจับรอยแตกร้าว สนิม โมดูล telemetry หรือคำแนะนำบำรุงรักษา",
+      "สวัสดีครับ ผมคือผู้ช่วย AI ของ M.F.R. ถามผมได้เรื่องสรุปแดชบอร์ด จุดเสี่ยง การตรวจจับรอยแตกร้าว สนิม ชุดปฏิบัติการ telemetry หรือคำแนะนำบำรุงรักษา",
   },
 ];
 
@@ -26,7 +26,7 @@ const suggestions = [
   "พบรอยแตกร้าวกี่จุด",
   "แนะนำการบำรุงรักษา",
   "สถานะ telemetry ของหุ่นยนต์",
-  "มีโมดูลอะไรบ้าง",
+  "มีชุดปฏิบัติการอะไรบ้าง",
 ];
 
 export function AiChatConsole() {
@@ -95,7 +95,7 @@ export function AiChatConsole() {
             </span>
             <div>
               <CardTitle>แชต AI ของ M.F.R.</CardTitle>
-              <CardDescription>คุยกับ AI เพื่ออ่านข้อมูลการตรวจสอบ หุ่นยนต์ โมดูล และการบำรุงรักษา</CardDescription>
+              <CardDescription>คุยกับ AI เพื่ออ่านข้อมูลการตรวจสอบ หุ่นยนต์ ชุดปฏิบัติการ และการบำรุงรักษา</CardDescription>
             </div>
           </div>
         </CardHeader>

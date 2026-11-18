@@ -1,0 +1,3472 @@
+{
+  "schema_version": "1.0.0",
+  "generated_by": "dataset_spec/build_auditable_dataset.py",
+  "seed": 42,
+  "real_labeled_defect_images_count": 0,
+  "source_photos_placeholder_files": [],
+  "disclaimer": "[PIPELINE SMOKE-TEST ONLY \u2014 PROCEDURAL FIXTURE; REAL FACADE ACCURACY = NOT TRAINED / NOT EVALUATED]",
+  "taxonomy": {
+    "0": "Crack",
+    "1": "Sealant deterioration",
+    "2": "Rust / corrosion",
+    "3": "Water stain",
+    "4": "Normal surface"
+  },
+  "tier_a_real_curtainwall_unlabeled_audit": {
+    "status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+    "tile_count": 16,
+    "tiles": [
+      {
+        "tile_filename": "S01_audit_tile_00.png",
+        "rel_path": "real_curtainwall_unlabeled_audit/S01_audit_tile_00.png",
+        "source_asset": "S01_curtain_wall_cc0.jpg",
+        "source_sha256": "4813cd88cc5e7ac2a399af74a6ef7883d5f7ddba951d1fbe7db2eecd3456b385",
+        "tile_sha256": "820891437eee7056943a49306b735545c7e4e7ac524604d97d3a37fe4f2f980b",
+        "crop_xywh": [
+          80,
+          1240,
+          256,
+          256
+        ],
+        "license": "CC0",
+        "attribution": "LapGaNaiom Bimdio (Wikimedia Commons, CC0)",
+        "label_status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+        "defect_annotations": []
+      },
+      {
+        "tile_filename": "S01_audit_tile_01.png",
+        "rel_path": "real_curtainwall_unlabeled_audit/S01_audit_tile_01.png",
+        "source_asset": "S01_curtain_wall_cc0.jpg",
+        "source_sha256": "4813cd88cc5e7ac2a399af74a6ef7883d5f7ddba951d1fbe7db2eecd3456b385",
+        "tile_sha256": "575bf49727a12e862ed370e0a7a65a1b50a8e56667a3ec95aeab26e54ca0562d",
+        "crop_xywh": [
+          350,
+          1240,
+          256,
+          256
+        ],
+        "license": "CC0",
+        "attribution": "LapGaNaiom Bimdio (Wikimedia Commons, CC0)",
+        "label_status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+        "defect_annotations": []
+      },
+      {
+        "tile_filename": "S01_audit_tile_02.png",
+        "rel_path": "real_curtainwall_unlabeled_audit/S01_audit_tile_02.png",
+        "source_asset": "S01_curtain_wall_cc0.jpg",
+        "source_sha256": "4813cd88cc5e7ac2a399af74a6ef7883d5f7ddba951d1fbe7db2eecd3456b385",
+        "tile_sha256": "f6f119bb7b1546583bc967081fcc0ccb60165b1050e54fdf3df499b22eba4ae4",
+        "crop_xywh": [
+          1340,
+          1240,
+          256,
+          256
+        ],
+        "license": "CC0",
+        "attribution": "LapGaNaiom Bimdio (Wikimedia Commons, CC0)",
+        "label_status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+        "defect_annotations": []
+      },
+      {
+        "tile_filename": "S01_audit_tile_03.png",
+        "rel_path": "real_curtainwall_unlabeled_audit/S01_audit_tile_03.png",
+        "source_asset": "S01_curtain_wall_cc0.jpg",
+        "source_sha256": "4813cd88cc5e7ac2a399af74a6ef7883d5f7ddba951d1fbe7db2eecd3456b385",
+        "tile_sha256": "db1f86d97ecb8d5412e7a91258aaf4f70c7b90c8e7a35fca924c295f2213482e",
+        "crop_xywh": [
+          1610,
+          1240,
+          256,
+          256
+        ],
+        "license": "CC0",
+        "attribution": "LapGaNaiom Bimdio (Wikimedia Commons, CC0)",
+        "label_status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+        "defect_annotations": []
+      },
+      {
+        "tile_filename": "S01_audit_tile_04.png",
+        "rel_path": "real_curtainwall_unlabeled_audit/S01_audit_tile_04.png",
+        "source_asset": "S01_curtain_wall_cc0.jpg",
+        "source_sha256": "4813cd88cc5e7ac2a399af74a6ef7883d5f7ddba951d1fbe7db2eecd3456b385",
+        "tile_sha256": "4b8432694b59093ef9ff0e7deb651a9895500f518cc96d0b9091e7377084bd95",
+        "crop_xywh": [
+          80,
+          1430,
+          256,
+          256
+        ],
+        "license": "CC0",
+        "attribution": "LapGaNaiom Bimdio (Wikimedia Commons, CC0)",
+        "label_status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+        "defect_annotations": []
+      },
+      {
+        "tile_filename": "S01_audit_tile_05.png",
+        "rel_path": "real_curtainwall_unlabeled_audit/S01_audit_tile_05.png",
+        "source_asset": "S01_curtain_wall_cc0.jpg",
+        "source_sha256": "4813cd88cc5e7ac2a399af74a6ef7883d5f7ddba951d1fbe7db2eecd3456b385",
+        "tile_sha256": "16a4810dd669f7fed92d2ad7ddd5dcf622847c263969d179b7a82f7de3a4223d",
+        "crop_xywh": [
+          350,
+          1430,
+          256,
+          256
+        ],
+        "license": "CC0",
+        "attribution": "LapGaNaiom Bimdio (Wikimedia Commons, CC0)",
+        "label_status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+        "defect_annotations": []
+      },
+      {
+        "tile_filename": "S01_audit_tile_06.png",
+        "rel_path": "real_curtainwall_unlabeled_audit/S01_audit_tile_06.png",
+        "source_asset": "S01_curtain_wall_cc0.jpg",
+        "source_sha256": "4813cd88cc5e7ac2a399af74a6ef7883d5f7ddba951d1fbe7db2eecd3456b385",
+        "tile_sha256": "0180527e9bb918305617f1e401a9e563816c794916e1f2c56175a3729e1cc4e9",
+        "crop_xywh": [
+          1340,
+          1430,
+          256,
+          256
+        ],
+        "license": "CC0",
+        "attribution": "LapGaNaiom Bimdio (Wikimedia Commons, CC0)",
+        "label_status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+        "defect_annotations": []
+      },
+      {
+        "tile_filename": "S01_audit_tile_07.png",
+        "rel_path": "real_curtainwall_unlabeled_audit/S01_audit_tile_07.png",
+        "source_asset": "S01_curtain_wall_cc0.jpg",
+        "source_sha256": "4813cd88cc5e7ac2a399af74a6ef7883d5f7ddba951d1fbe7db2eecd3456b385",
+        "tile_sha256": "c8dc6f5f16aeb33cd91b64773522b027215e4f04eb388ce4fcf97c725c016f72",
+        "crop_xywh": [
+          1610,
+          1430,
+          256,
+          256
+        ],
+        "license": "CC0",
+        "attribution": "LapGaNaiom Bimdio (Wikimedia Commons, CC0)",
+        "label_status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+        "defect_annotations": []
+      },
+      {
+        "tile_filename": "S04_audit_tile_00.png",
+        "rel_path": "real_curtainwall_unlabeled_audit/S04_audit_tile_00.png",
+        "source_asset": "S04_curtain_wall_mullions_ccbysa3.jpg",
+        "source_sha256": "f4a4341ea552e2b4753f686287406c5c206b12231d79ff40f83617bbcab74949",
+        "tile_sha256": "84a98eb3e9521a52f114e688709383a7310f514b8d8144e6ae6f254c7ea7c9c3",
+        "crop_xywh": [
+          160,
+          120,
+          256,
+          256
+        ],
+        "license": "CC BY-SA 3.0",
+        "attribution": "Tim1965 (Wikimedia Commons, CC BY-SA 3.0)",
+        "label_status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+        "defect_annotations": []
+      },
+      {
+        "tile_filename": "S04_audit_tile_01.png",
+        "rel_path": "real_curtainwall_unlabeled_audit/S04_audit_tile_01.png",
+        "source_asset": "S04_curtain_wall_mullions_ccbysa3.jpg",
+        "source_sha256": "f4a4341ea552e2b4753f686287406c5c206b12231d79ff40f83617bbcab74949",
+        "tile_sha256": "bc8db7bfc182eb526ec87dbdd9d333d369e10171e0c0551d9fc11bf54a565451",
+        "crop_xywh": [
+          680,
+          140,
+          256,
+          256
+        ],
+        "license": "CC BY-SA 3.0",
+        "attribution": "Tim1965 (Wikimedia Commons, CC BY-SA 3.0)",
+        "label_status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+        "defect_annotations": []
+      },
+      {
+        "tile_filename": "S04_audit_tile_02.png",
+        "rel_path": "real_curtainwall_unlabeled_audit/S04_audit_tile_02.png",
+        "source_asset": "S04_curtain_wall_mullions_ccbysa3.jpg",
+        "source_sha256": "f4a4341ea552e2b4753f686287406c5c206b12231d79ff40f83617bbcab74949",
+        "tile_sha256": "cba2e981ac95d3f83c96121609ca974d172ebb30fa6f468e42684c627631abd5",
+        "crop_xywh": [
+          1180,
+          180,
+          256,
+          256
+        ],
+        "license": "CC BY-SA 3.0",
+        "attribution": "Tim1965 (Wikimedia Commons, CC BY-SA 3.0)",
+        "label_status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+        "defect_annotations": []
+      },
+      {
+        "tile_filename": "S04_audit_tile_03.png",
+        "rel_path": "real_curtainwall_unlabeled_audit/S04_audit_tile_03.png",
+        "source_asset": "S04_curtain_wall_mullions_ccbysa3.jpg",
+        "source_sha256": "f4a4341ea552e2b4753f686287406c5c206b12231d79ff40f83617bbcab74949",
+        "tile_sha256": "b8d5bf6198fa3f11303d99b4d1db5037b88c037ac986f0efe1fbdbdf9041e55a",
+        "crop_xywh": [
+          1500,
+          220,
+          256,
+          256
+        ],
+        "license": "CC BY-SA 3.0",
+        "attribution": "Tim1965 (Wikimedia Commons, CC BY-SA 3.0)",
+        "label_status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+        "defect_annotations": []
+      },
+      {
+        "tile_filename": "S04_audit_tile_04.png",
+        "rel_path": "real_curtainwall_unlabeled_audit/S04_audit_tile_04.png",
+        "source_asset": "S04_curtain_wall_mullions_ccbysa3.jpg",
+        "source_sha256": "f4a4341ea552e2b4753f686287406c5c206b12231d79ff40f83617bbcab74949",
+        "tile_sha256": "391ec4e34cc90163c2cdf76a40f6f2cad2e3ad994f1b6ae3b9515d1d9647584a",
+        "crop_xywh": [
+          220,
+          620,
+          256,
+          256
+        ],
+        "license": "CC BY-SA 3.0",
+        "attribution": "Tim1965 (Wikimedia Commons, CC BY-SA 3.0)",
+        "label_status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+        "defect_annotations": []
+      },
+      {
+        "tile_filename": "S04_audit_tile_05.png",
+        "rel_path": "real_curtainwall_unlabeled_audit/S04_audit_tile_05.png",
+        "source_asset": "S04_curtain_wall_mullions_ccbysa3.jpg",
+        "source_sha256": "f4a4341ea552e2b4753f686287406c5c206b12231d79ff40f83617bbcab74949",
+        "tile_sha256": "e8710fa77833efe12703603c4013577a8d236e619f37f3fefc630cd6652b0404",
+        "crop_xywh": [
+          740,
+          640,
+          256,
+          256
+        ],
+        "license": "CC BY-SA 3.0",
+        "attribution": "Tim1965 (Wikimedia Commons, CC BY-SA 3.0)",
+        "label_status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+        "defect_annotations": []
+      },
+      {
+        "tile_filename": "S04_audit_tile_06.png",
+        "rel_path": "real_curtainwall_unlabeled_audit/S04_audit_tile_06.png",
+        "source_asset": "S04_curtain_wall_mullions_ccbysa3.jpg",
+        "source_sha256": "f4a4341ea552e2b4753f686287406c5c206b12231d79ff40f83617bbcab74949",
+        "tile_sha256": "83caef8767445e4b084fe8e2c993e32d6c9e226fcaa0438bfbf5348686a9616d",
+        "crop_xywh": [
+          1120,
+          700,
+          256,
+          256
+        ],
+        "license": "CC BY-SA 3.0",
+        "attribution": "Tim1965 (Wikimedia Commons, CC BY-SA 3.0)",
+        "label_status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+        "defect_annotations": []
+      },
+      {
+        "tile_filename": "S04_audit_tile_07.png",
+        "rel_path": "real_curtainwall_unlabeled_audit/S04_audit_tile_07.png",
+        "source_asset": "S04_curtain_wall_mullions_ccbysa3.jpg",
+        "source_sha256": "f4a4341ea552e2b4753f686287406c5c206b12231d79ff40f83617bbcab74949",
+        "tile_sha256": "e62754d73517d906fcf860b0133afa05e848b2285bfe8a06ae23cfcdf89ec77b",
+        "crop_xywh": [
+          1460,
+          740,
+          256,
+          256
+        ],
+        "license": "CC BY-SA 3.0",
+        "attribution": "Tim1965 (Wikimedia Commons, CC BY-SA 3.0)",
+        "label_status": "UNLABELED_CURTAINWALL_AUDIT_ONLY",
+        "defect_annotations": []
+      }
+    ]
+  },
+  "tier_b_smoke_fixture": {
+    "status": "SMOKE_TEST_FIXTURE_ONLY",
+    "image_size": [
+      256,
+      256
+    ],
+    "split_counts": {
+      "train": 100,
+      "val": 25,
+      "test": 25
+    },
+    "panel_counts": {
+      "train": 50,
+      "val": 15,
+      "test": 15
+    },
+    "panel_leakage_detected": false,
+    "coco_annotations_rel_path": "smoke_fixture/coco_annotations.json",
+    "coco_sha256": "05e8db841e9e2193d4ef8cf9267eecb98ac47ca7cdc4767bf870bf2d065ae58a",
+    "splits": {
+      "train": [
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_00.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_00.txt",
+          "image_sha256": "877dd8ff84a073aaaa51b7ed83749f3198d9a8a1512795c816a41f759d1b2fca",
+          "label_sha256": "11fe9914a8dff43c777ac03d61cc4244c7af65e9ad121bae7a51781c19129077",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_001",
+          "bbox_xyxy": [
+            122,
+            108,
+            230,
+            161
+          ],
+          "bbox_yolo": [
+            0.6875,
+            0.525391,
+            0.421875,
+            0.207031
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_01.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_01.txt",
+          "image_sha256": "6160bf4d6bf28550956cc00236ad70ac222ac7272eadec1a65ff2afb75495705",
+          "label_sha256": "9ccd8387b50c26fdf808956a7984502dc35c06a268512a8a7b66c06e0f2f0904",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_001",
+          "bbox_xyxy": [
+            44,
+            58,
+            149,
+            105
+          ],
+          "bbox_yolo": [
+            0.376953,
+            0.318359,
+            0.410156,
+            0.183594
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_02.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_02.txt",
+          "image_sha256": "ad5ccc2b3ef9dcb772dbae9146dfb63b5bfd993938e128be2576ec54020595a6",
+          "label_sha256": "705af3d51619cd145abb5dbb214eafa967c2ad6d639990e9c2c2f4690e432d64",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_002",
+          "bbox_xyxy": [
+            50,
+            82,
+            149,
+            152
+          ],
+          "bbox_yolo": [
+            0.388672,
+            0.457031,
+            0.386719,
+            0.273438
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_03.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_03.txt",
+          "image_sha256": "92e2d5bd9ffc64d92359b2dbac962c56b07fc5150ba6b4648455366d491343cf",
+          "label_sha256": "a7f2af6df292d98f3672f324ec8be81a4d4dd1d5302d9f9300a7962ad5a3e0e8",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_002",
+          "bbox_xyxy": [
+            164,
+            50,
+            246,
+            119
+          ],
+          "bbox_yolo": [
+            0.800781,
+            0.330078,
+            0.320312,
+            0.269531
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_04.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_04.txt",
+          "image_sha256": "fadd51b321e79ed2c77977d40fb72dd822d3d7e0c5d4cd45d4382f1b4a0568d2",
+          "label_sha256": "58519589a86ea0acf73722e481dd5d0a7edf7e77d50ffb302c1893b017908f94",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_003",
+          "bbox_xyxy": [
+            78,
+            112,
+            201,
+            187
+          ],
+          "bbox_yolo": [
+            0.544922,
+            0.583984,
+            0.480469,
+            0.292969
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_05.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_05.txt",
+          "image_sha256": "3402b87f2211a7522f5a2d8d314645e8e0f9fb88ca781dee81ab5279081d5ebd",
+          "label_sha256": "4c0d69d7d327e8c5992ef5b755985e7980aa3896070c54e9a84ac2d23b57de06",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_003",
+          "bbox_xyxy": [
+            75,
+            102,
+            170,
+            150
+          ],
+          "bbox_yolo": [
+            0.478516,
+            0.492188,
+            0.371094,
+            0.1875
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_06.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_06.txt",
+          "image_sha256": "7cc4e0ee5f482d8079cf677bcd0aa57390977ac03cd7ba716c0878dbcf013f9b",
+          "label_sha256": "03083754e0e6ee8de8bfb3e6ee6f28aaa76b7fa384209118150b5be63e6b9d78",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_004",
+          "bbox_xyxy": [
+            69,
+            207,
+            178,
+            246
+          ],
+          "bbox_yolo": [
+            0.482422,
+            0.884766,
+            0.425781,
+            0.152344
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_07.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_07.txt",
+          "image_sha256": "80e24d3f20004d5322952df626d3a0db086407b9ef27ad67258a3a077ac4a368",
+          "label_sha256": "ffbf8073f15fd61e3b6d5a2fa9a78b37d2bef0e635d3e7b699986036605f1122",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_004",
+          "bbox_xyxy": [
+            65,
+            10,
+            202,
+            78
+          ],
+          "bbox_yolo": [
+            0.521484,
+            0.171875,
+            0.535156,
+            0.265625
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_08.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_08.txt",
+          "image_sha256": "7ec845c7a9e0f8082fa5044f9185fb44800e04c818a24b75499293152cea7a39",
+          "label_sha256": "d3f55176ec12e86933ed16ec6747e0b7ec4609e0ae01cc0ea7fd246f70b8a74c",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_005",
+          "bbox_xyxy": [
+            141,
+            119,
+            246,
+            172
+          ],
+          "bbox_yolo": [
+            0.755859,
+            0.568359,
+            0.410156,
+            0.207031
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_09.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_09.txt",
+          "image_sha256": "64309d540db5896aaa08a6edb6758081e307e6fddc0f692c65bece663cf35432",
+          "label_sha256": "ef961313425865561b80270c3a465ac265947021f5d886b64f44ba4555ccccfc",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_005",
+          "bbox_xyxy": [
+            32,
+            122,
+            159,
+            201
+          ],
+          "bbox_yolo": [
+            0.373047,
+            0.630859,
+            0.496094,
+            0.308594
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_10.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_10.txt",
+          "image_sha256": "7cf408bc5bda0489cda25bdd46ac95f743a0f44732ad91c2ce5e09e1d9bad2e5",
+          "label_sha256": "d0796913faa88621cf9b5afc1a212f8ddd53b8640a37cdc0428022b85979ebb3",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_006",
+          "bbox_xyxy": [
+            147,
+            112,
+            246,
+            150
+          ],
+          "bbox_yolo": [
+            0.767578,
+            0.511719,
+            0.386719,
+            0.148438
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_11.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_11.txt",
+          "image_sha256": "0e753a8fc47e89dbdacfe3615b3355bc74b82b039ddc58ed2e2531bfb23deb67",
+          "label_sha256": "3dad2ad51a20ad86606ff62d7b67c63b1459e046c8b9f2894d21cfdd85236ca4",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_006",
+          "bbox_xyxy": [
+            112,
+            129,
+            236,
+            169
+          ],
+          "bbox_yolo": [
+            0.679688,
+            0.582031,
+            0.484375,
+            0.15625
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_12.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_12.txt",
+          "image_sha256": "dd498827d2b50d5c2fb4d89ecc53e83eb476a317dad8bc608b236960e09f8832",
+          "label_sha256": "35421db15a2c958ce326b775c6ad05844a369c7f2691ee0f038876d91d809734",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_007",
+          "bbox_xyxy": [
+            122,
+            10,
+            244,
+            67
+          ],
+          "bbox_yolo": [
+            0.714844,
+            0.150391,
+            0.476562,
+            0.222656
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_13.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_13.txt",
+          "image_sha256": "7eabcfb772c1d8d80e2e0e00202003c36d43f0bb475c11f917db66e13962a7f7",
+          "label_sha256": "8994b1b8f929fcebe06674a10cb0e16762010da90f40a8effe9b45783e69b3ea",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_007",
+          "bbox_xyxy": [
+            63,
+            115,
+            200,
+            151
+          ],
+          "bbox_yolo": [
+            0.513672,
+            0.519531,
+            0.535156,
+            0.140625
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_14.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_14.txt",
+          "image_sha256": "8b177a2cffc8bb3ff51ac8904fdcb9a6ff70d1f8f5cdce12771bb323fb43c146",
+          "label_sha256": "460358f3167c88eb966dd9469d55e9810a56b8bd224f9e136927366a0e447956",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_008",
+          "bbox_xyxy": [
+            116,
+            151,
+            198,
+            216
+          ],
+          "bbox_yolo": [
+            0.613281,
+            0.716797,
+            0.320312,
+            0.253906
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_15.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_15.txt",
+          "image_sha256": "627a43e922adba0ee6d749e92b40e1d4d8fdc4433a614ad6f9b1bc7a8ec2fc56",
+          "label_sha256": "cb1246b17e2be6242ccb25952efe17004115f379cb2faf3e456211109174e536",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_008",
+          "bbox_xyxy": [
+            62,
+            79,
+            171,
+            121
+          ],
+          "bbox_yolo": [
+            0.455078,
+            0.390625,
+            0.425781,
+            0.164062
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_16.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_16.txt",
+          "image_sha256": "c612c29c5f614fa2ca1564585ed626c89e2176526d5419210471963ccb735d47",
+          "label_sha256": "93e265177bfd5e7e7fc5457d1cc9703bd91d3a414103a20aa62de5a1ae1249bf",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_009",
+          "bbox_xyxy": [
+            98,
+            69,
+            226,
+            113
+          ],
+          "bbox_yolo": [
+            0.632812,
+            0.355469,
+            0.5,
+            0.171875
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_17.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_17.txt",
+          "image_sha256": "454f5071e41ec26b1f24144bcfb051605b896f65ba4871f5c0bd8eb94d86b662",
+          "label_sha256": "7efd7ea20048782b7f85caf69b77fe5f57ecc20825501c023bc06aa3a56a4ca9",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_009",
+          "bbox_xyxy": [
+            116,
+            151,
+            234,
+            188
+          ],
+          "bbox_yolo": [
+            0.683594,
+            0.662109,
+            0.460938,
+            0.144531
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_18.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_18.txt",
+          "image_sha256": "2de87719194c95d6d7a2f62af4886f621724e1396891824bdea338b2d140e1a7",
+          "label_sha256": "0b865d8ba8d4251547f8754de14cd5586a93844f8caa052040e8580ddd73620b",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_010",
+          "bbox_xyxy": [
+            114,
+            20,
+            236,
+            84
+          ],
+          "bbox_yolo": [
+            0.683594,
+            0.203125,
+            0.476562,
+            0.25
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c0_19.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c0_19.txt",
+          "image_sha256": "b62bbdd2fdace9c63e184f001cc390ec978c9fa5e37277250524fdff85f6423b",
+          "label_sha256": "cc527aa4fc47dfd45ac8f6d55f1df8735cb4dfdf11fa73bbecc1deda700e8795",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TRN_010",
+          "bbox_xyxy": [
+            120,
+            23,
+            246,
+            98
+          ],
+          "bbox_yolo": [
+            0.714844,
+            0.236328,
+            0.492188,
+            0.292969
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_00.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_00.txt",
+          "image_sha256": "5e992f8cbbd2cdf29bb2faf86603ed050d849b9b9c5f0b51f23935e36265e3a3",
+          "label_sha256": "459e6d56362313907d8e3a6a47bef9fb8a047c818f34193bc0b35dba5cb9bc23",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_011",
+          "bbox_xyxy": [
+            112,
+            45,
+            144,
+            151
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.382812,
+            0.125,
+            0.414062
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_01.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_01.txt",
+          "image_sha256": "35891386594fd69818aee8a89cabb719e50a23fbe41f5497e7fdafdd237c6a8c",
+          "label_sha256": "f0ce68eea41946891ba5dc8da4d5b1584a8b669ba24d2ed1a46fcddacff74c2e",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_011",
+          "bbox_xyxy": [
+            43,
+            68,
+            146,
+            100
+          ],
+          "bbox_yolo": [
+            0.369141,
+            0.328125,
+            0.402344,
+            0.125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_02.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_02.txt",
+          "image_sha256": "569aeda723162c27f4e9748ba62c946935583276f3b470d9cc4ec9a4a273a855",
+          "label_sha256": "2a8f63e991707013a47b78b80448d8ed521d71f572b17344055a7149ba3215d6",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_012",
+          "bbox_xyxy": [
+            155,
+            20,
+            187,
+            111
+          ],
+          "bbox_yolo": [
+            0.667969,
+            0.255859,
+            0.125,
+            0.355469
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_03.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_03.txt",
+          "image_sha256": "7e6ae551266f6d43b52e3ce3029fee6f18a6794e23974ef4ed7cddb1e02d3e78",
+          "label_sha256": "ef7c7b1c8e7698d787ab36903d016c9f78ef800ba5d1c7222b30bf716b9667e5",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_012",
+          "bbox_xyxy": [
+            166,
+            102,
+            198,
+            186
+          ],
+          "bbox_yolo": [
+            0.710938,
+            0.5625,
+            0.125,
+            0.328125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_04.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_04.txt",
+          "image_sha256": "187ba824fdee1deea3e0e44be45b46455acab35019019c49c42dd2d659cd9722",
+          "label_sha256": "1879435ca2071cc6b04ba38f7b450f5bc1f6a191a22013afecf09a3d00fe27de",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_013",
+          "bbox_xyxy": [
+            130,
+            60,
+            162,
+            158
+          ],
+          "bbox_yolo": [
+            0.570312,
+            0.425781,
+            0.125,
+            0.382812
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_05.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_05.txt",
+          "image_sha256": "7840a8067acbc090cae45813e4226e25a9e2299c4cd13a8377f17fbe60f49065",
+          "label_sha256": "66f92181607a2d51ca2f6aca33a69edf9ccee0cff1b163b8daaee3f512c7a77f",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_013",
+          "bbox_xyxy": [
+            80,
+            181,
+            162,
+            213
+          ],
+          "bbox_yolo": [
+            0.472656,
+            0.769531,
+            0.320312,
+            0.125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_06.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_06.txt",
+          "image_sha256": "bd213a7a6735898f7abacea668fd90a388c6eee35e98ab5e9118d82cbbc3089a",
+          "label_sha256": "34f360b1a5f504b9bb2603b25c43d71c4f6955b6152e9c7629c2e9867fa3b595",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_014",
+          "bbox_xyxy": [
+            81,
+            178,
+            166,
+            210
+          ],
+          "bbox_yolo": [
+            0.482422,
+            0.757812,
+            0.332031,
+            0.125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_07.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_07.txt",
+          "image_sha256": "02dc54cd80cc4c78648a4da9c3adb9647e42b61f8dc7f75b78a245be828a8e5f",
+          "label_sha256": "13ffba85af46899d29548ae575f83aaa9ba2fc7f36e924c559f359dddf28e980",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_014",
+          "bbox_xyxy": [
+            175,
+            38,
+            207,
+            131
+          ],
+          "bbox_yolo": [
+            0.746094,
+            0.330078,
+            0.125,
+            0.363281
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_08.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_08.txt",
+          "image_sha256": "28c6b887c852bd115a9d17c4525651211781d15e1a66b5eb6b4be4047291a00c",
+          "label_sha256": "3a861bb28679bd93ea91b5f5ab3b2f091403402c3abbfbb759f7eedb9c292321",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_015",
+          "bbox_xyxy": [
+            53,
+            72,
+            85,
+            187
+          ],
+          "bbox_yolo": [
+            0.269531,
+            0.505859,
+            0.125,
+            0.449219
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_09.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_09.txt",
+          "image_sha256": "4b44903a1d5c0447ea4cce48603ab9f2f67c79a3827a109326871dcdbd03208b",
+          "label_sha256": "1d61039f9e59cb2e918ae0d337fb1a8adc02b5e0bc25eceb9b4a5f8ef89ebe39",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_015",
+          "bbox_xyxy": [
+            68,
+            105,
+            100,
+            205
+          ],
+          "bbox_yolo": [
+            0.328125,
+            0.605469,
+            0.125,
+            0.390625
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_10.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_10.txt",
+          "image_sha256": "54313cad3186b3a385609c0557f7019f9e70f0b001ad482c42a28938874659e0",
+          "label_sha256": "2c771352b99b7d8737b9f79980ee1b74b7ecd185430ea2991e773966f5640c7d",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_016",
+          "bbox_xyxy": [
+            109,
+            64,
+            141,
+            183
+          ],
+          "bbox_yolo": [
+            0.488281,
+            0.482422,
+            0.125,
+            0.464844
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_11.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_11.txt",
+          "image_sha256": "8db55c4de0c2fa4443bb4010f292bfac0261b017e2008c2106cb6e72c2aba527",
+          "label_sha256": "8f513ce1e1d92773d0a3c17b73628eb18bf2e6b9bde5e1eecd1ad4c008a377b3",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_016",
+          "bbox_xyxy": [
+            27,
+            68,
+            128,
+            100
+          ],
+          "bbox_yolo": [
+            0.302734,
+            0.328125,
+            0.394531,
+            0.125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_12.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_12.txt",
+          "image_sha256": "fa1e36fb9a2819fcff4cf2eb177a40e7c5839c9f1618c3850b75a5763415579a",
+          "label_sha256": "994d8197047304ec8dc5e689c393df5c79d71b84f868802ec89d8f3f12ff602d",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_017",
+          "bbox_xyxy": [
+            46,
+            109,
+            142,
+            141
+          ],
+          "bbox_yolo": [
+            0.367188,
+            0.488281,
+            0.375,
+            0.125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_13.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_13.txt",
+          "image_sha256": "79dd82d16d3a0927f65b9ec7d60e0e6a67bc83b607840ba012f77f0eaf9c018e",
+          "label_sha256": "9423ac7e74f7df7d9c54a004b3bce2ccd9a41b27c9a9f819b1f453c2770046e9",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_017",
+          "bbox_xyxy": [
+            75,
+            168,
+            191,
+            200
+          ],
+          "bbox_yolo": [
+            0.519531,
+            0.71875,
+            0.453125,
+            0.125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_14.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_14.txt",
+          "image_sha256": "c0fad7034f6f9e165d4bcf4ae841a5f42410783b85fc379db19c4d9422be5941",
+          "label_sha256": "3c686b33a78092516e57bfb1c02a1aa596cfc310d759b15b62bc3b26a18fe14b",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_018",
+          "bbox_xyxy": [
+            118,
+            42,
+            150,
+            131
+          ],
+          "bbox_yolo": [
+            0.523438,
+            0.337891,
+            0.125,
+            0.347656
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_15.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_15.txt",
+          "image_sha256": "f1de13edb825526f786960adf1831027be71fee31788ddfe581d313f7264aa28",
+          "label_sha256": "20f04355ab6fbd173e56715d2d4e9b263964d33e770548fc7f21e4fb4ba0657b",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_018",
+          "bbox_xyxy": [
+            90,
+            117,
+            175,
+            149
+          ],
+          "bbox_yolo": [
+            0.517578,
+            0.519531,
+            0.332031,
+            0.125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_16.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_16.txt",
+          "image_sha256": "16df263281a30e14ec40b4821874629457e88fd0843b0976549187cfd108f7d9",
+          "label_sha256": "f0f0ca6cd35c64bc9b1d1c4c5ae07705709c1efa56e4b82f90d29548a886be60",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_019",
+          "bbox_xyxy": [
+            30,
+            92,
+            62,
+            186
+          ],
+          "bbox_yolo": [
+            0.179688,
+            0.542969,
+            0.125,
+            0.367188
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_17.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_17.txt",
+          "image_sha256": "38028b074362364df0aad804d2e8d40572f361baa916b2a70781840ec9cfe044",
+          "label_sha256": "6087eeec563e0a7df4b018cb44559a84c119233cf1a02a3928490731976313bc",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_019",
+          "bbox_xyxy": [
+            80,
+            118,
+            205,
+            150
+          ],
+          "bbox_yolo": [
+            0.556641,
+            0.523438,
+            0.488281,
+            0.125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_18.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_18.txt",
+          "image_sha256": "b98562c9f6af4550db93f34b651907f80791a4b5169c486f0910f7db4612e0e0",
+          "label_sha256": "b1739429760a1b18ac890dd83db0b701f0a93b6f048854836fdffe6641390ef0",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_020",
+          "bbox_xyxy": [
+            105,
+            83,
+            222,
+            115
+          ],
+          "bbox_yolo": [
+            0.638672,
+            0.386719,
+            0.457031,
+            0.125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c1_19.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c1_19.txt",
+          "image_sha256": "0359593d8354a0ecc4ee2e2e2f179549b06d6f1cfc808dbe81e47f40aa14d9a9",
+          "label_sha256": "75c3075ca7f4a64897b4bfc556804bf905c47832aefe0a00609122fc90aa687f",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TRN_020",
+          "bbox_xyxy": [
+            41,
+            44,
+            73,
+            146
+          ],
+          "bbox_yolo": [
+            0.222656,
+            0.371094,
+            0.125,
+            0.398438
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_00.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_00.txt",
+          "image_sha256": "a87b325df730936d5ab24d2bdc2cced5dd4612e1ecf52a4bb4ed75a331320fed",
+          "label_sha256": "7a57aa19f3698e63c204af26cfb4728f271482cbe6d75e1c645f18b0c0d08164",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_021",
+          "bbox_xyxy": [
+            113,
+            20,
+            193,
+            107
+          ],
+          "bbox_yolo": [
+            0.597656,
+            0.248047,
+            0.3125,
+            0.339844
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_01.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_01.txt",
+          "image_sha256": "40d81c8ab4923066d9984bd57f535c0fcc9a417ab96199f6e959745ff4fe9353",
+          "label_sha256": "1d96b78e27a5e427407f88849df802511f0d8b3fcb62cc36bc4973cc2755a59e",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_021",
+          "bbox_xyxy": [
+            127,
+            70,
+            203,
+            160
+          ],
+          "bbox_yolo": [
+            0.644531,
+            0.449219,
+            0.296875,
+            0.351562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_02.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_02.txt",
+          "image_sha256": "f87b939f9fc83fe2cff5d7b9928bd66f6954593990e4f1791c5a94ee6a26f0da",
+          "label_sha256": "77dfe990fc7dcb09e0efa54de9bdf1c19f017a512bf6db97e4ec3538f8b04599",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_022",
+          "bbox_xyxy": [
+            158,
+            109,
+            246,
+            184
+          ],
+          "bbox_yolo": [
+            0.789062,
+            0.572266,
+            0.34375,
+            0.292969
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_03.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_03.txt",
+          "image_sha256": "80b80d369153af615977c16944d47dbedaab932819e467fb4a0d222b3392cb95",
+          "label_sha256": "80eed2c4cd43a9c3d6623d209a7ead5a3e4c8338d3dfe6002f9c56886ec290a4",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_022",
+          "bbox_xyxy": [
+            151,
+            77,
+            218,
+            136
+          ],
+          "bbox_yolo": [
+            0.720703,
+            0.416016,
+            0.261719,
+            0.230469
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_04.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_04.txt",
+          "image_sha256": "44e81402e6cbef5c49ed5939c4db5b1f6f20d5b498fff59468fd1015910227e7",
+          "label_sha256": "965f8524c98f5211f61a9604cdc1ca67f65c3899ca9ff827ff294e12509187d6",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_023",
+          "bbox_xyxy": [
+            12,
+            171,
+            94,
+            230
+          ],
+          "bbox_yolo": [
+            0.207031,
+            0.783203,
+            0.320312,
+            0.230469
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_05.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_05.txt",
+          "image_sha256": "d1f00f5be91b435c11cab9fc8104ca8e13497ce16f4f0f5897aae7c7a2d0af6d",
+          "label_sha256": "ff3e73540118ed7eb0f2a25fbd7a950ec15509752fa1fc100a19f63d8005e555",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_023",
+          "bbox_xyxy": [
+            163,
+            12,
+            234,
+            104
+          ],
+          "bbox_yolo": [
+            0.775391,
+            0.226562,
+            0.277344,
+            0.359375
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_06.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_06.txt",
+          "image_sha256": "e78f2df4f7fd8fc8cc51374d3d6816de7a291b8a584db0b6046527b5ba263182",
+          "label_sha256": "da879ab2db39153616fd1b5a56b9238a1904a0a51e3f3bca3a2906ea85358028",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_024",
+          "bbox_xyxy": [
+            7,
+            26,
+            96,
+            92
+          ],
+          "bbox_yolo": [
+            0.201172,
+            0.230469,
+            0.347656,
+            0.257812
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_07.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_07.txt",
+          "image_sha256": "2ae93fdef774dbf30179fc8f576b373d174f9e5c4ed9538cf5897da4cf2bb2cb",
+          "label_sha256": "f15692182ac57f309689f0c28a23c616e471163db9db04bef9f9bef58b5725e8",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_024",
+          "bbox_xyxy": [
+            33,
+            145,
+            92,
+            208
+          ],
+          "bbox_yolo": [
+            0.244141,
+            0.689453,
+            0.230469,
+            0.246094
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_08.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_08.txt",
+          "image_sha256": "4b0c90d942f66793ac44ba2d565017945f96c04d90de7407495fc49fa29d1fc5",
+          "label_sha256": "a21a93a80ad02d2937aa17a32b9437d98842d66685e164bd8e3f9fd08a137d0e",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_025",
+          "bbox_xyxy": [
+            71,
+            11,
+            148,
+            107
+          ],
+          "bbox_yolo": [
+            0.427734,
+            0.230469,
+            0.300781,
+            0.375
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_09.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_09.txt",
+          "image_sha256": "ab54af78086d22af29a613a790c47d89b050eef6cd3c48e1f517beef420ec5d8",
+          "label_sha256": "423d92a9f33d7b9c52350333c3472dcb0b6298266d8b9e8799f8a8d3af087312",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_025",
+          "bbox_xyxy": [
+            107,
+            13,
+            182,
+            95
+          ],
+          "bbox_yolo": [
+            0.564453,
+            0.210938,
+            0.292969,
+            0.320312
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_10.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_10.txt",
+          "image_sha256": "0239321bba38a92b207dd84e56e4a28ad8a0f4ec30c00b823c1ce381a059d89d",
+          "label_sha256": "b0dd74247ca169d154ed3d1dc93752ba5cf30e6c1db44d18766bce1433552b7b",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_026",
+          "bbox_xyxy": [
+            101,
+            95,
+            190,
+            171
+          ],
+          "bbox_yolo": [
+            0.568359,
+            0.519531,
+            0.347656,
+            0.296875
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_11.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_11.txt",
+          "image_sha256": "f1e8f5aff45e6330639cb74337f049cfdd1211ee34fd758e92ca1cdde18e0ab5",
+          "label_sha256": "2fe4d0904882f3e49a508b1e38514c85481c575aa4bbd95bc0d6379eabf5e0a5",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_026",
+          "bbox_xyxy": [
+            119,
+            130,
+            204,
+            204
+          ],
+          "bbox_yolo": [
+            0.630859,
+            0.652344,
+            0.332031,
+            0.289062
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_12.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_12.txt",
+          "image_sha256": "4a756acd211fec00d48a553e13ca190f66866194ef28b8e437c93d6f3be47c79",
+          "label_sha256": "4995a62cc7a6c52f9b46fd4608dca974b05d4673300dab812f23b7288e451b6f",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_027",
+          "bbox_xyxy": [
+            145,
+            26,
+            224,
+            93
+          ],
+          "bbox_yolo": [
+            0.720703,
+            0.232422,
+            0.308594,
+            0.261719
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_13.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_13.txt",
+          "image_sha256": "6cc8b45798b310a70a4cc9b5b92188f2025c151d415a8c8740a6c4ab6281e1b3",
+          "label_sha256": "ac748e5b9a959bc57582fc1677ce88d74f376408d4b631f563c1b4d9c2fe35db",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_027",
+          "bbox_xyxy": [
+            90,
+            69,
+            173,
+            158
+          ],
+          "bbox_yolo": [
+            0.513672,
+            0.443359,
+            0.324219,
+            0.347656
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_14.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_14.txt",
+          "image_sha256": "4481b5943f543ca48575e8c0b31dd3f4b534fa80adbfc2f2ae936bbb6c93e525",
+          "label_sha256": "b2bf2b80a967709d8861ae6e3164b6ecc20c7d8f1f1cc4586a797111c7f8b525",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_028",
+          "bbox_xyxy": [
+            65,
+            18,
+            141,
+            84
+          ],
+          "bbox_yolo": [
+            0.402344,
+            0.199219,
+            0.296875,
+            0.257812
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_15.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_15.txt",
+          "image_sha256": "c9ae8f1da0ede80b794e9d9473ce2cae88709027d7da25e60fcff757f733af6e",
+          "label_sha256": "b7154fd7b8677d99a9c8f8ea6563773a23c49b13efa22d56d2f22389cc3301d1",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_028",
+          "bbox_xyxy": [
+            164,
+            42,
+            248,
+            108
+          ],
+          "bbox_yolo": [
+            0.804688,
+            0.292969,
+            0.328125,
+            0.257812
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_16.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_16.txt",
+          "image_sha256": "e2264823dbe414f1fe9f8680a4d82257627b30a1a86f2f7e8ddc708936bd9787",
+          "label_sha256": "4c8a10d57cd4f1597beab8a2eaac42bb05926e9c40a27c20cf73cb68ae9e6549",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_029",
+          "bbox_xyxy": [
+            148,
+            135,
+            225,
+            208
+          ],
+          "bbox_yolo": [
+            0.728516,
+            0.669922,
+            0.300781,
+            0.285156
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_17.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_17.txt",
+          "image_sha256": "62fb00912b8f7c40be8290e200ae1eccd0a22889ce8c28affd98e2f7fddb3b7a",
+          "label_sha256": "1038c2b4f6a647fd40ddc93f52558acb3d47f00e2e942f1d4b3966de38de1c4f",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_029",
+          "bbox_xyxy": [
+            11,
+            103,
+            103,
+            175
+          ],
+          "bbox_yolo": [
+            0.222656,
+            0.542969,
+            0.359375,
+            0.28125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_18.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_18.txt",
+          "image_sha256": "263069e18e384d22607dc1167c15d7beb10a1f10ef7880491cc54c288119bbc5",
+          "label_sha256": "9974abcdf334915acba6da4be413a790397097ceb4606673226eada7988916a0",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_030",
+          "bbox_xyxy": [
+            150,
+            30,
+            236,
+            108
+          ],
+          "bbox_yolo": [
+            0.753906,
+            0.269531,
+            0.335938,
+            0.304688
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c2_19.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c2_19.txt",
+          "image_sha256": "d52fc42bfbd075dd547a0a336229be52f35825709208f1bed8f7850e650647b2",
+          "label_sha256": "aac46e5bbc9ef306b2b46c4f8e109541ee10c18481f1f4534039286e093cb4de",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TRN_030",
+          "bbox_xyxy": [
+            63,
+            37,
+            152,
+            111
+          ],
+          "bbox_yolo": [
+            0.419922,
+            0.289062,
+            0.347656,
+            0.289062
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_00.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_00.txt",
+          "image_sha256": "baa03d29ab9d768c34a0f25dea4f6dd4e4fbcb1ccc1e0f6beb1b59358080011b",
+          "label_sha256": "ef794fee6a8f803a30d6877c72b4b3153b8c0884341fcbf8b65408918dcb39d7",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_031",
+          "bbox_xyxy": [
+            37,
+            59,
+            97,
+            183
+          ],
+          "bbox_yolo": [
+            0.261719,
+            0.472656,
+            0.234375,
+            0.484375
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_01.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_01.txt",
+          "image_sha256": "e981626fe9cf45be2ae9abd8bd2eaa0dfad23893b4b0944b698a92ad8b253339",
+          "label_sha256": "5de53daff6d58a0465ea515d118ae5082e417a363f6b807a11c5fd8aa410c275",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_031",
+          "bbox_xyxy": [
+            167,
+            79,
+            221,
+            191
+          ],
+          "bbox_yolo": [
+            0.757812,
+            0.527344,
+            0.210938,
+            0.4375
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_02.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_02.txt",
+          "image_sha256": "912fe072e3b3af56cd585c7dc457be7be3567fb38f4c42dcef61b00b432f07cf",
+          "label_sha256": "b1f6446ee5058965e84e2b76f38099f55f6c95d90a0c38f939397f54c7609ead",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_032",
+          "bbox_xyxy": [
+            67,
+            83,
+            141,
+            176
+          ],
+          "bbox_yolo": [
+            0.40625,
+            0.505859,
+            0.289062,
+            0.363281
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_03.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_03.txt",
+          "image_sha256": "e70b686bbf99e405d13655a0adef64a7c185cabce361ce8435b3c9924b171bb8",
+          "label_sha256": "1acbc043ee11f4a10aa86a40d07327c74ad8efe872747603af623b275b816b2f",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_032",
+          "bbox_xyxy": [
+            115,
+            42,
+            171,
+            162
+          ],
+          "bbox_yolo": [
+            0.558594,
+            0.398438,
+            0.21875,
+            0.46875
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_04.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_04.txt",
+          "image_sha256": "a1e1defb50106c50987cf70c5e0fd0be6ccd571f3e87f3b642d24b001d8b79c4",
+          "label_sha256": "b948d460cdac8901c15ff597e08392dbc6a89cfacb56888d35b2fd09c9bdd439",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_033",
+          "bbox_xyxy": [
+            59,
+            81,
+            137,
+            168
+          ],
+          "bbox_yolo": [
+            0.382812,
+            0.486328,
+            0.304688,
+            0.339844
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_05.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_05.txt",
+          "image_sha256": "8e6df23db61b986b6bf3a72760ca0017d3055427a2f540b6e484f3cdaef38fcf",
+          "label_sha256": "66bd0921cc14ad59774a59cd38656b616a9bbdb4c397d3d01d0a56d7e82a60c5",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_033",
+          "bbox_xyxy": [
+            156,
+            50,
+            218,
+            127
+          ],
+          "bbox_yolo": [
+            0.730469,
+            0.345703,
+            0.242188,
+            0.300781
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_06.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_06.txt",
+          "image_sha256": "f6b99967ec74c3230c558b31e57923d0223070d4316bf773db9f0a07f878c9f6",
+          "label_sha256": "a21f93e56bd442ff82d6bdb7cb4e68acd90581e224d01773a685a39f0d637207",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_034",
+          "bbox_xyxy": [
+            142,
+            83,
+            202,
+            167
+          ],
+          "bbox_yolo": [
+            0.671875,
+            0.488281,
+            0.234375,
+            0.328125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_07.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_07.txt",
+          "image_sha256": "4304b3a906f23a3c2a3efb17d52af3e59b11e2b123728ca5fdc11d4c7f27794a",
+          "label_sha256": "46d44d5335aa743fdcc503057a557af76481138211c388fe3bf459a865cf2393",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_034",
+          "bbox_xyxy": [
+            63,
+            71,
+            117,
+            164
+          ],
+          "bbox_yolo": [
+            0.351562,
+            0.458984,
+            0.210938,
+            0.363281
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_08.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_08.txt",
+          "image_sha256": "71cc32e55ed0710de3de03e580578c78c8b93d1695467416e06549bbe2e4ac37",
+          "label_sha256": "b8a615bf28e829f0b1b18636c8a16156d00bb369f5d4c95428afa0138f65733c",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_035",
+          "bbox_xyxy": [
+            46,
+            84,
+            128,
+            179
+          ],
+          "bbox_yolo": [
+            0.339844,
+            0.513672,
+            0.320312,
+            0.371094
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_09.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_09.txt",
+          "image_sha256": "910041f590cf671195856854b38640d6687a7b23e89149d555a84e986260d65e",
+          "label_sha256": "5650370626bb735fad72984940da3b608cb2e78ac3e747aa9cd704e47c4face6",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_035",
+          "bbox_xyxy": [
+            138,
+            23,
+            192,
+            111
+          ],
+          "bbox_yolo": [
+            0.644531,
+            0.261719,
+            0.210938,
+            0.34375
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_10.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_10.txt",
+          "image_sha256": "73ce92d184060df243efbeac1eea91ed2bcf25580a5ddd26c5a5da50baf7fb7c",
+          "label_sha256": "e5bde081663e7be27a68c0aef5c33acb771327202bb13d7a9f010789df6a4b46",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_036",
+          "bbox_xyxy": [
+            117,
+            32,
+            183,
+            121
+          ],
+          "bbox_yolo": [
+            0.585938,
+            0.298828,
+            0.257812,
+            0.347656
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_11.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_11.txt",
+          "image_sha256": "94d7e70e836208365131aee84fed71cd11882a6074dc8ffecd834ab57bcae494",
+          "label_sha256": "ec88ad0f4b7d0d1175ca49efcbc3d87e5251b953663c982a1f28fc186083e8ae",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_036",
+          "bbox_xyxy": [
+            89,
+            80,
+            143,
+            160
+          ],
+          "bbox_yolo": [
+            0.453125,
+            0.46875,
+            0.210938,
+            0.3125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_12.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_12.txt",
+          "image_sha256": "bcf87f535f225e3c38774e7cbaeec78bca35ff4156a73e862931beb0dcaffa33",
+          "label_sha256": "4fe834ba9cb470eab6240745ab8313efe654b1fb923958dd078b4b63bbb28e4f",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_037",
+          "bbox_xyxy": [
+            39,
+            75,
+            121,
+            167
+          ],
+          "bbox_yolo": [
+            0.3125,
+            0.472656,
+            0.320312,
+            0.359375
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_13.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_13.txt",
+          "image_sha256": "c7e98ecfd3568eef94eb4ad7cac15be1a040a8fa5bc26b1f6509b7c8c97ace3f",
+          "label_sha256": "cdc637e42d5b14a11a6fd1d3839ba93fd90e08899eb7ba1fe330345bd14ebd64",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_037",
+          "bbox_xyxy": [
+            132,
+            54,
+            200,
+            151
+          ],
+          "bbox_yolo": [
+            0.648438,
+            0.400391,
+            0.265625,
+            0.378906
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_14.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_14.txt",
+          "image_sha256": "aa322647e7d6a8c09aced255cce010919c72e24ddf3f1851507fffabeb9f1b07",
+          "label_sha256": "43a33143e38f1dbdfb3168d01347f057e5fd3c2dd6a57a42a36a6b7ab0abebd3",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_038",
+          "bbox_xyxy": [
+            99,
+            57,
+            169,
+            142
+          ],
+          "bbox_yolo": [
+            0.523438,
+            0.388672,
+            0.273438,
+            0.332031
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_15.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_15.txt",
+          "image_sha256": "4c68249b5d27a5d4bbeb025df3187aeb5db8840aec843c6cdde7b14eedff19a4",
+          "label_sha256": "b16d75570355af9d34d4176a97957946ee170eff07e7d28f2f6e84e0045a16e2",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_038",
+          "bbox_xyxy": [
+            103,
+            30,
+            161,
+            146
+          ],
+          "bbox_yolo": [
+            0.515625,
+            0.34375,
+            0.226562,
+            0.453125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_16.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_16.txt",
+          "image_sha256": "f09e391126f15a58b143d55c7e062e5e11a097885a12ae1cb811fec9b632a97a",
+          "label_sha256": "0913ce8c1eb492622449482de5c34201a5c5ea52d9ad215b1083e28adf5e4f7d",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_039",
+          "bbox_xyxy": [
+            56,
+            67,
+            112,
+            173
+          ],
+          "bbox_yolo": [
+            0.328125,
+            0.46875,
+            0.21875,
+            0.414062
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_17.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_17.txt",
+          "image_sha256": "0bf91949e7443c1e4bd82ad0a264202b90f50de7f6b1bae774951f0388d96888",
+          "label_sha256": "8d15f3ecdd41e348bcd116a4557a2978964101c21e605a79c39dff1cc6881ca6",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_039",
+          "bbox_xyxy": [
+            91,
+            84,
+            169,
+            165
+          ],
+          "bbox_yolo": [
+            0.507812,
+            0.486328,
+            0.304688,
+            0.316406
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_18.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_18.txt",
+          "image_sha256": "5bd94a5ef1231157b1627e40727e2bd97d5b4ef10eea2cf16786cfdc790502c9",
+          "label_sha256": "cc186048f89ee450da632504dc03407a9af1cc7171ad049532d151c94dcaadbe",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_040",
+          "bbox_xyxy": [
+            36,
+            40,
+            118,
+            157
+          ],
+          "bbox_yolo": [
+            0.300781,
+            0.384766,
+            0.320312,
+            0.457031
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c3_19.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c3_19.txt",
+          "image_sha256": "3d5a74494b65454f215c67f5ac4bbcc66e238a410e8572a45836a897cc8ce45d",
+          "label_sha256": "02db382be9036817fc9678b6ee85326130a3e81aabcf97a3193e1b5e85392004",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TRN_040",
+          "bbox_xyxy": [
+            49,
+            66,
+            99,
+            151
+          ],
+          "bbox_yolo": [
+            0.289062,
+            0.423828,
+            0.195312,
+            0.332031
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_00.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_00.txt",
+          "image_sha256": "a5c7cabbca7ac5172598a6608ce6a83f1c1f69f4b2a39c5500dce4b264d0c4b7",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_041",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_01.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_01.txt",
+          "image_sha256": "98c471ee928c6f1b7e6dc8119d4932c2ffa2cc11fe6718939d467d43a7a73c8b",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_041",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_02.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_02.txt",
+          "image_sha256": "ca54f7979e32a9da97e0bdee09bbd4e40a8fccb0f8f8896d86dc6bd011e59114",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_042",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_03.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_03.txt",
+          "image_sha256": "adcfce591b937d8928fb1e89b04b62123ba8752e01832ad576c91a0981268598",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_042",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_04.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_04.txt",
+          "image_sha256": "d359ec1b0e70d84f8e86d98b3339a4a679c25403e29c3aaf94d0326ab17ab679",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_043",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_05.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_05.txt",
+          "image_sha256": "598ad61e425a19d754daf2624bcc5c8b8f1daee3a5c3b63e94f0af5ca4ef51f4",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_043",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_06.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_06.txt",
+          "image_sha256": "a2f228902b813677e5773853765bd46b4a901f4f384fb66317c231d154816a65",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_044",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_07.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_07.txt",
+          "image_sha256": "c5736087b4784466d21ce47eacf54f25b68c11c0b996ee33b3eb5b5a91086e32",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_044",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_08.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_08.txt",
+          "image_sha256": "53cfa133023729ef72cd954c8eadacb44fbf37c4b76a06c5522365d0fbc92908",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_045",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_09.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_09.txt",
+          "image_sha256": "cee6b6f56ca0545302b973de3d22beccda76c930da9b8d6592f8ee490d245e01",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_045",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_10.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_10.txt",
+          "image_sha256": "0885ed27fd7e0a5055f5b0685426665d3386ed4df6fdf216a5e3c72aa2cfd751",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_046",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_11.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_11.txt",
+          "image_sha256": "546759d53fec744c00fdc1568968e1a1b6c0918b8e6f69cce2501e9f98b351f3",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_046",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_12.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_12.txt",
+          "image_sha256": "9fd8abcd7b0ad42bd8ae2f5dbaf3807b434f5d3cfc9dcb9191d475e5ff88b075",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_047",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_13.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_13.txt",
+          "image_sha256": "44aa6aca1bf75ac9d28d58eabc20c7b1ee352abffd0ccee95c37e6ec691e700e",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_047",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_14.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_14.txt",
+          "image_sha256": "64c24868aa3a9b6ab7f1db511cb9c00efb709af1f3b0108aca0671eae8e87880",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_048",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_15.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_15.txt",
+          "image_sha256": "e680a3011e35eb873f3e098a23964a286ac3fe0d7180afcf58833ab76ff0a699",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_048",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_16.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_16.txt",
+          "image_sha256": "64a0711b11251dcdab54ff4a1f4b6c62060212d78156b0745ea1d3f1a6c8ad02",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_049",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_17.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_17.txt",
+          "image_sha256": "ceb3c9c4c05d8224512aeb01f834dd9b91889957655a7df35a2117be9776a382",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_049",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_18.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_18.txt",
+          "image_sha256": "892e3372fd8eca1bc1b58f34f5fb00bcc1ebcd41a722a7c134a464a5d19b53e5",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_050",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/train/smoke_train_c4_19.png",
+          "label_rel_path": "smoke_fixture/labels/train/smoke_train_c4_19.txt",
+          "image_sha256": "25b92472f435a13019f4cd12398a71909c417249397a1490c0aa8cb8187e4290",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TRN_050",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        }
+      ],
+      "val": [
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c0_00.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c0_00.txt",
+          "image_sha256": "e41617d71c2f99e47f7fb0f2ea5db18c624a25d0529c93ca211a66466db9e67d",
+          "label_sha256": "a42f7af00dba5f66e296ca30cab397a180a709aecae3127cd3640aed687e9632",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_VAL_051",
+          "bbox_xyxy": [
+            164,
+            24,
+            246,
+            67
+          ],
+          "bbox_yolo": [
+            0.800781,
+            0.177734,
+            0.320312,
+            0.167969
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c0_01.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c0_01.txt",
+          "image_sha256": "3432dc1823d5ba04adb97a53a1404b5d714304eb89804bfacc1796665cb15167",
+          "label_sha256": "022ce0543c838c8a7337e2997729a0402467cae4a76609ae7f0fbebba37ab2d1",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_VAL_051",
+          "bbox_xyxy": [
+            42,
+            124,
+            174,
+            205
+          ],
+          "bbox_yolo": [
+            0.421875,
+            0.642578,
+            0.515625,
+            0.316406
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c0_02.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c0_02.txt",
+          "image_sha256": "a307f3618aecac4c1ef26a33c0c3de76e874f71fba27860d55538c182a394908",
+          "label_sha256": "21ebad1144f2be6812bbb4db80dd234b143fda6c82205369296e24c185ccf21c",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_VAL_052",
+          "bbox_xyxy": [
+            84,
+            57,
+            210,
+            96
+          ],
+          "bbox_yolo": [
+            0.574219,
+            0.298828,
+            0.492188,
+            0.152344
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c0_03.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c0_03.txt",
+          "image_sha256": "01665b1d34719fdc7f4b072526a627046f31108ed1750598dbd4766d06031f99",
+          "label_sha256": "654ffa99dc663423e0773cb99d6cccd5d8797a8588d356cf50b92bf6ca03f931",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_VAL_052",
+          "bbox_xyxy": [
+            43,
+            97,
+            125,
+            138
+          ],
+          "bbox_yolo": [
+            0.328125,
+            0.458984,
+            0.320312,
+            0.160156
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c0_04.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c0_04.txt",
+          "image_sha256": "9be2da258c46e276e158c445a15cb0a13a701414cc8811f6d96d2e0ef0eeb143",
+          "label_sha256": "18b1c93b23fc89eddc7fdd5183bb863742af58fa9f911025c63d3ba14cf2ff47",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_VAL_053",
+          "bbox_xyxy": [
+            140,
+            120,
+            246,
+            177
+          ],
+          "bbox_yolo": [
+            0.753906,
+            0.580078,
+            0.414062,
+            0.222656
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c1_00.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c1_00.txt",
+          "image_sha256": "39b4e6519721d5e78a5836603a4b00e34e0592328d7b9804c939ac4c1dcdd931",
+          "label_sha256": "6a9b16e61e502ad02d43b066972436da4b52d9c7d84c0c86fb717c523325b9df",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_VAL_054",
+          "bbox_xyxy": [
+            80,
+            47,
+            192,
+            79
+          ],
+          "bbox_yolo": [
+            0.53125,
+            0.246094,
+            0.4375,
+            0.125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c1_01.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c1_01.txt",
+          "image_sha256": "9c5242e11116eded8706c4198247c12087a8ee392c333226552fb1d2f1fad150",
+          "label_sha256": "d1dbb22fb07adfea5b8358c5e60b1c18fe1de18eb54579edb7b2af96deec4b7f",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_VAL_054",
+          "bbox_xyxy": [
+            88,
+            41,
+            120,
+            159
+          ],
+          "bbox_yolo": [
+            0.40625,
+            0.390625,
+            0.125,
+            0.460938
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c1_02.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c1_02.txt",
+          "image_sha256": "c14210a9258b4aeeb5040572c2a455c9e9e16a488eccc21a9fd6ad519ff3c8c2",
+          "label_sha256": "8fd5a65e4ba0c3c0e9fd0d9cd775b0f92ae031bb394bb6c86dc668b65fb15ddd",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_VAL_055",
+          "bbox_xyxy": [
+            85,
+            120,
+            209,
+            152
+          ],
+          "bbox_yolo": [
+            0.574219,
+            0.53125,
+            0.484375,
+            0.125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c1_03.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c1_03.txt",
+          "image_sha256": "3f13036a5fdf01758f6c31462f3c055f48019c17be575342d6556357fdc2d2fa",
+          "label_sha256": "3e153848310d6be9671ff49384275977c11cc770a21c86d7b61e53870f514ec0",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_VAL_055",
+          "bbox_xyxy": [
+            174,
+            97,
+            206,
+            213
+          ],
+          "bbox_yolo": [
+            0.742188,
+            0.605469,
+            0.125,
+            0.453125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c1_04.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c1_04.txt",
+          "image_sha256": "f33d0b612c09a8db191d6753e254cc30a2e2a271081a4d8a7caabcccb3b1e210",
+          "label_sha256": "dfbddcd8c7471932e538234d6eb9c5d575db0707934490fd67b7b150caee19c8",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_VAL_056",
+          "bbox_xyxy": [
+            154,
+            84,
+            186,
+            190
+          ],
+          "bbox_yolo": [
+            0.664062,
+            0.535156,
+            0.125,
+            0.414062
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c2_00.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c2_00.txt",
+          "image_sha256": "c2338113a7b50fb3cf8a5f9448fd1add78991c5ca4701f5eb216b6e9eeee9f33",
+          "label_sha256": "bec74cca1c1d37a750d4aa40634b7e6d2927260d49d57058e372d74f0a975cc5",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_VAL_057",
+          "bbox_xyxy": [
+            10,
+            75,
+            96,
+            143
+          ],
+          "bbox_yolo": [
+            0.207031,
+            0.425781,
+            0.335938,
+            0.265625
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c2_01.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c2_01.txt",
+          "image_sha256": "b6dc82192e54b698a6b98e49f2135fdcd27c4cb94629fa252162c9875c9be954",
+          "label_sha256": "d6238458919eb688bcbd6ce9cd99034f61be3ee95495ccf69099653c43310618",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_VAL_057",
+          "bbox_xyxy": [
+            154,
+            42,
+            212,
+            127
+          ],
+          "bbox_yolo": [
+            0.714844,
+            0.330078,
+            0.226562,
+            0.332031
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c2_02.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c2_02.txt",
+          "image_sha256": "238273ed7b3f9628907bc2cde52b96bc77364e5d9939c8d7d6404065dd4119ee",
+          "label_sha256": "0373b745da25399edc8daa48b8a78f77eca2b603ca8a99bcfcc95da5fa1cbbc3",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_VAL_058",
+          "bbox_xyxy": [
+            18,
+            109,
+            97,
+            175
+          ],
+          "bbox_yolo": [
+            0.224609,
+            0.554688,
+            0.308594,
+            0.257812
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c2_03.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c2_03.txt",
+          "image_sha256": "a15d7890a39df89c1154748e50181af3f3833eac63a8cf74eefb79bf4ffd4494",
+          "label_sha256": "fa7af1bc81cb158b1211147d9d44e6f2637e3efb733d5e03f0e0a592804e0b5a",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_VAL_058",
+          "bbox_xyxy": [
+            121,
+            160,
+            199,
+            227
+          ],
+          "bbox_yolo": [
+            0.625,
+            0.755859,
+            0.304688,
+            0.261719
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c2_04.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c2_04.txt",
+          "image_sha256": "76afdbc6acabe2cd6da92245922b5dd70d247154b7f0a72664a021ffce9192de",
+          "label_sha256": "97629c1b638446acaa32ead5038eb43538a25ce281d3a8870a002258c4776362",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_VAL_059",
+          "bbox_xyxy": [
+            148,
+            35,
+            215,
+            109
+          ],
+          "bbox_yolo": [
+            0.708984,
+            0.28125,
+            0.261719,
+            0.289062
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c3_00.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c3_00.txt",
+          "image_sha256": "1dfeb1f19b389e579d6117855b8a6c04d78cf99e44279bedc72e01ae63e38028",
+          "label_sha256": "fedabc4847c99fc05f2807a816557e57fcf05f01ed58056bbe855b7bb98cd518",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_VAL_060",
+          "bbox_xyxy": [
+            164,
+            45,
+            236,
+            141
+          ],
+          "bbox_yolo": [
+            0.78125,
+            0.363281,
+            0.28125,
+            0.375
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c3_01.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c3_01.txt",
+          "image_sha256": "3b22281c398c99c964e3756ae1618b642245abe54908e3739161816bf8c9d1e9",
+          "label_sha256": "2d47679a045d302622f3d690743626216e2a1a5ccece85e5287326f973b7601c",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_VAL_060",
+          "bbox_xyxy": [
+            152,
+            64,
+            230,
+            145
+          ],
+          "bbox_yolo": [
+            0.746094,
+            0.408203,
+            0.304688,
+            0.316406
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c3_02.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c3_02.txt",
+          "image_sha256": "cb03ed75a9e0be9cd73c58a986726e7140f88977dcaded683e44f344eb88895c",
+          "label_sha256": "06e595f3eb42f711c3f8405bbeac7f158c6ae15c1202091d51e05a88823de703",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_VAL_061",
+          "bbox_xyxy": [
+            34,
+            86,
+            84,
+            162
+          ],
+          "bbox_yolo": [
+            0.230469,
+            0.484375,
+            0.195312,
+            0.296875
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c3_03.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c3_03.txt",
+          "image_sha256": "5e934e7ed98a50468dc4e2c84024fcdc3b2913e62d832bb8d92a682be1b9beb8",
+          "label_sha256": "c0ec9f51ab98594bad2b3c5982ef4643ed536a5635bcd4c2bb48ddc93c640f2c",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_VAL_061",
+          "bbox_xyxy": [
+            79,
+            69,
+            145,
+            189
+          ],
+          "bbox_yolo": [
+            0.4375,
+            0.503906,
+            0.257812,
+            0.46875
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c3_04.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c3_04.txt",
+          "image_sha256": "0a3ef78c65aeb85c98645c248bfc95a85120e5f4fecf144bf53c2eb2e45e23a6",
+          "label_sha256": "7023cb56cbade38cf013ea145fb1dee0d32baaaa7ecfab49cd8d4be12d087116",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_VAL_062",
+          "bbox_xyxy": [
+            107,
+            83,
+            179,
+            197
+          ],
+          "bbox_yolo": [
+            0.558594,
+            0.546875,
+            0.28125,
+            0.445312
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c4_00.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c4_00.txt",
+          "image_sha256": "5168395a89215fe810455d2923bf7309a9f06eb039c4514ed0b8fc26094ed94f",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_VAL_063",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c4_01.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c4_01.txt",
+          "image_sha256": "62d49813395e7ec5821db52b233c97bca8942956475c9dd083cd8640788353e9",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_VAL_063",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c4_02.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c4_02.txt",
+          "image_sha256": "6a88bdb85f9bc0df2fd81f4d7e453a34e8209c8d440709a840e96f8a30899d6a",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_VAL_064",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c4_03.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c4_03.txt",
+          "image_sha256": "48748241f5f3376131de9938d1357f50af19f94610ec38bef12a300773c0447c",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_VAL_064",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/val/smoke_val_c4_04.png",
+          "label_rel_path": "smoke_fixture/labels/val/smoke_val_c4_04.txt",
+          "image_sha256": "d426eb89737af50706351fb9d50881e04586815da8df6f9aa3efe5c633cfba86",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_VAL_065",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        }
+      ],
+      "test": [
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c0_00.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c0_00.txt",
+          "image_sha256": "924774ded35630b638fda56f20d5a048d6ef00fda5663e1b277cf91bd71bf4c3",
+          "label_sha256": "76af13dc89f40ea5c252cea6e3f93ad45d6b7487b2eca69dd215aa869f7c0e7f",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TST_066",
+          "bbox_xyxy": [
+            41,
+            34,
+            140,
+            73
+          ],
+          "bbox_yolo": [
+            0.353516,
+            0.208984,
+            0.386719,
+            0.152344
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c0_01.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c0_01.txt",
+          "image_sha256": "2acc03ec18638b5a731721635a45d51001536eabed99e4085eb0c947d3110a3a",
+          "label_sha256": "9e911c7edf49714b71a9fe4f63b429a56624bc8a2af2fc57b2b5c29267a05ff8",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TST_066",
+          "bbox_xyxy": [
+            39,
+            10,
+            124,
+            60
+          ],
+          "bbox_yolo": [
+            0.318359,
+            0.136719,
+            0.332031,
+            0.195312
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c0_02.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c0_02.txt",
+          "image_sha256": "49f0a1e3544d3d0b51332fdfd802b386527538f1ff5c619125ff116791b2c99a",
+          "label_sha256": "23249133f428098e68e999e048b28f1aa5cbec65a4ad53a848cce59fdeaa5e93",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TST_067",
+          "bbox_xyxy": [
+            88,
+            131,
+            179,
+            175
+          ],
+          "bbox_yolo": [
+            0.521484,
+            0.597656,
+            0.355469,
+            0.171875
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c0_03.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c0_03.txt",
+          "image_sha256": "24bddd8dd4f68c4ccd04a164c9b7fd215811f69d23acbbd514b7ae71c570fa72",
+          "label_sha256": "3d9603767d2d675bce43f7195df91926e1a5b4444c63e1f91cd4996453a43fd3",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TST_067",
+          "bbox_xyxy": [
+            91,
+            142,
+            198,
+            185
+          ],
+          "bbox_yolo": [
+            0.564453,
+            0.638672,
+            0.417969,
+            0.167969
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c0_04.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c0_04.txt",
+          "image_sha256": "b489e7020707972795f230ccc45f720577196ad6b6b8194f23136a216aa52aae",
+          "label_sha256": "fab0a41c3c9f001215c79fa419e5cbfa740b0869625158a8e753ee74e46c48f4",
+          "class_id": 0,
+          "class_name": "Crack",
+          "panel_id": "PANEL_TST_068",
+          "bbox_xyxy": [
+            64,
+            59,
+            157,
+            118
+          ],
+          "bbox_yolo": [
+            0.431641,
+            0.345703,
+            0.363281,
+            0.230469
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c1_00.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c1_00.txt",
+          "image_sha256": "99d7ca87394775bb6fe9a67e2a7632515725518f50ccb12641a2e3437e2283b7",
+          "label_sha256": "79a4761062dedeeb2541413e518e3e89f3b1c48b9f4654abeb6ae9fc2ab0675e",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TST_069",
+          "bbox_xyxy": [
+            180,
+            22,
+            212,
+            103
+          ],
+          "bbox_yolo": [
+            0.765625,
+            0.244141,
+            0.125,
+            0.316406
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c1_01.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c1_01.txt",
+          "image_sha256": "6c597f1b3d27404712da4707ef97f598f9802da5f5016202a65f7343e03f76d7",
+          "label_sha256": "0da1e51ce23eb25b120ed3ae84129336f6a497e6be3864c0ae7b2bfc0b82e48e",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TST_069",
+          "bbox_xyxy": [
+            57,
+            166,
+            150,
+            198
+          ],
+          "bbox_yolo": [
+            0.404297,
+            0.710938,
+            0.363281,
+            0.125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c1_02.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c1_02.txt",
+          "image_sha256": "56ef7dac6ac2c747f0aecfedd1531001f5a222feead2a36401a9f9ac96dc883e",
+          "label_sha256": "dad376e507f7990ee1d0e218c58fef80c0ff14092a429c533940e2af20d8205e",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TST_070",
+          "bbox_xyxy": [
+            106,
+            86,
+            138,
+            184
+          ],
+          "bbox_yolo": [
+            0.476562,
+            0.527344,
+            0.125,
+            0.382812
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c1_03.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c1_03.txt",
+          "image_sha256": "5b01c7be0155948c415c42e820a27aceb9e82d83a698e14b359b1d75eeda1831",
+          "label_sha256": "76d58bac091df8276e055654d6b21bc0b36c39cbd489379f5deafd3385ec473f",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TST_070",
+          "bbox_xyxy": [
+            60,
+            44,
+            92,
+            154
+          ],
+          "bbox_yolo": [
+            0.296875,
+            0.386719,
+            0.125,
+            0.429688
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c1_04.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c1_04.txt",
+          "image_sha256": "392cb0f72875d9711e2b9d541bd6087ecf34a689407713c3bad40a8956ab8d23",
+          "label_sha256": "2a4d52b70570f4382080ff521352b59f588b1556d6d0b10e9424257704bac4ed",
+          "class_id": 1,
+          "class_name": "Sealant deterioration",
+          "panel_id": "PANEL_TST_071",
+          "bbox_xyxy": [
+            111,
+            29,
+            143,
+            153
+          ],
+          "bbox_yolo": [
+            0.496094,
+            0.355469,
+            0.125,
+            0.484375
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c2_00.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c2_00.txt",
+          "image_sha256": "70026d22952077aec5a0a3e831d439a798fdffc97f771a69ba50150b6b264b10",
+          "label_sha256": "7570917e44557d9a70575f2edfbf11aaaccfbcc775015d91836204c57564d6e1",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TST_072",
+          "bbox_xyxy": [
+            108,
+            45,
+            170,
+            122
+          ],
+          "bbox_yolo": [
+            0.542969,
+            0.326172,
+            0.242188,
+            0.300781
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c2_01.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c2_01.txt",
+          "image_sha256": "ca1ddcbdca46e38f5512c4e97dd3f218b2a11f93b7723096aacd701e3dd69ccc",
+          "label_sha256": "d4ac85276760f8ae66b0a2b5f285cc2880749ecb9ce837813fa575298aa963e1",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TST_072",
+          "bbox_xyxy": [
+            140,
+            134,
+            229,
+            205
+          ],
+          "bbox_yolo": [
+            0.720703,
+            0.662109,
+            0.347656,
+            0.277344
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c2_02.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c2_02.txt",
+          "image_sha256": "6623dfcf6c522d9844838f4a2f8942452589edfd995dbc4babf5abfc47a5ace0",
+          "label_sha256": "57a44525acdcc3ae1cb2f6f2d65073f2b13ba48e14ae67796f55707c048ca8b0",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TST_073",
+          "bbox_xyxy": [
+            36,
+            78,
+            103,
+            141
+          ],
+          "bbox_yolo": [
+            0.271484,
+            0.427734,
+            0.261719,
+            0.246094
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c2_03.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c2_03.txt",
+          "image_sha256": "3480c78f50fb7b92eb97917e86e7fadabeb145857d0a770c9a749f73169fb124",
+          "label_sha256": "5e1f551642d4bfd49acdd97458cdb04ec074263a0a93e55e4f5ef899358bd8b9",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TST_073",
+          "bbox_xyxy": [
+            106,
+            163,
+            167,
+            244
+          ],
+          "bbox_yolo": [
+            0.533203,
+            0.794922,
+            0.238281,
+            0.316406
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c2_04.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c2_04.txt",
+          "image_sha256": "53b5abd5e3aa16465597d9d1128dc804429fdefc0ba5533783860fe4ac87cd50",
+          "label_sha256": "f09335e49ee047100c39fbb819922ba38b33643f2fd12537b9c11a386de06721",
+          "class_id": 2,
+          "class_name": "Rust / corrosion",
+          "panel_id": "PANEL_TST_074",
+          "bbox_xyxy": [
+            107,
+            100,
+            201,
+            188
+          ],
+          "bbox_yolo": [
+            0.601562,
+            0.5625,
+            0.367188,
+            0.34375
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c3_00.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c3_00.txt",
+          "image_sha256": "382c8fe9b99609a4c1ad84f84cd6984b24fa2fda9c2f0b0663122755ad899e07",
+          "label_sha256": "f97f173eb8cad42624739420550b3be4809aad88de57eedc8390fe9bf2fdd90b",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TST_075",
+          "bbox_xyxy": [
+            98,
+            43,
+            178,
+            123
+          ],
+          "bbox_yolo": [
+            0.539062,
+            0.324219,
+            0.3125,
+            0.3125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c3_01.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c3_01.txt",
+          "image_sha256": "d673221a89d41621869e75e30ee3dfa83493ccaec048e513a41313e8f7e4754f",
+          "label_sha256": "2e887ceb316b255bd87d732681527049969a33975186937bfa852d79ef7330c2",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TST_075",
+          "bbox_xyxy": [
+            127,
+            79,
+            181,
+            163
+          ],
+          "bbox_yolo": [
+            0.601562,
+            0.472656,
+            0.210938,
+            0.328125
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c3_02.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c3_02.txt",
+          "image_sha256": "f52aad1766fc7f80c9340afd71c1cc06e706e924241d97eaf0a06e6b89189dcd",
+          "label_sha256": "3ca6bddf579e19c61f63283f7ec3b0ade029a4daccd5a16c544e8c008faf92d1",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TST_076",
+          "bbox_xyxy": [
+            25,
+            28,
+            97,
+            125
+          ],
+          "bbox_yolo": [
+            0.238281,
+            0.298828,
+            0.28125,
+            0.378906
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c3_03.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c3_03.txt",
+          "image_sha256": "2944b2e1c3e3dcc4878346a4175d6caee79a4f5135e16ca331fbd1664cc78000",
+          "label_sha256": "3bdcd09a1d5bcb73e8f08facf14f5e0fbfbb1de2656d3d1c97e11214f9db9975",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TST_076",
+          "bbox_xyxy": [
+            166,
+            50,
+            236,
+            169
+          ],
+          "bbox_yolo": [
+            0.785156,
+            0.427734,
+            0.273438,
+            0.464844
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c3_04.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c3_04.txt",
+          "image_sha256": "6521e1bc3dcf78a62ac1e45bf016033fab75758dd4d4fcb45cb47c193618eea5",
+          "label_sha256": "99467df29550052c875a7a5df757ea9cbe4acba29045858638ab6c1ab3526076",
+          "class_id": 3,
+          "class_name": "Water stain",
+          "panel_id": "PANEL_TST_077",
+          "bbox_xyxy": [
+            50,
+            90,
+            124,
+            214
+          ],
+          "bbox_yolo": [
+            0.339844,
+            0.59375,
+            0.289062,
+            0.484375
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c4_00.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c4_00.txt",
+          "image_sha256": "0c160edd329eba2e66b64e6780b040cb25a4c711462fada94cf28e08d242c15b",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TST_078",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c4_01.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c4_01.txt",
+          "image_sha256": "95f65554ae1a373ac51458aa582b25a0cdcbcc43516388dafda2fadbdb00642c",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TST_078",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c4_02.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c4_02.txt",
+          "image_sha256": "5e6ece6399b2b17167195ac83eaa3fce17ec6a3ad1be1f86cdf5585eda0f1405",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TST_079",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c4_03.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c4_03.txt",
+          "image_sha256": "111bc8b6d6fdadb843d48584bc25507519ded6f2055b509ec96baa3c42829eff",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TST_079",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        },
+        {
+          "image_rel_path": "smoke_fixture/images/test/smoke_test_c4_04.png",
+          "label_rel_path": "smoke_fixture/labels/test/smoke_test_c4_04.txt",
+          "image_sha256": "c47942be01b3d807b07369f99ddabe618d66dd0209aadeb4bec2dda9b965db3e",
+          "label_sha256": "ebc86193caf32d0e5d4ae8a155a064abbb749bba03645c1f3ebc811ed2c480e3",
+          "class_id": 4,
+          "class_name": "Normal surface",
+          "panel_id": "PANEL_TST_080",
+          "bbox_xyxy": [
+            19,
+            19,
+            237,
+            237
+          ],
+          "bbox_yolo": [
+            0.5,
+            0.5,
+            0.851562,
+            0.851562
+          ]
+        }
+      ]
+    }
+  },
+  "qa_sheet_sha256": "2a26ae3ddf8d2f502cfeb708f14ae1d16d4dc763df280c08f86c987d0ad6fbda"
+}

@@ -18,7 +18,7 @@ export default function HomePage() {
             แพลตฟอร์มจัดการสุขภาพผิวอาคาร
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-            หุ่นยนต์โมดูลาร์สำหรับตรวจสอบ ทำความสะอาด เฝ้าระวังผิวอาคาร วิเคราะห์ด้วย AI และวางแผนบำรุงรักษาเชิงคาดการณ์
+            หุ่นยนต์ฐานกลางพร้อมชุดปฏิบัติการสลับได้สำหรับตรวจสอบ ทำความสะอาด เฝ้าระวังผิวอาคาร วิเคราะห์ด้วย AI และวางแผนบำรุงรักษาเชิงคาดการณ์
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Button asChild className="h-12 rounded-2xl">

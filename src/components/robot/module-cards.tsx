@@ -23,12 +23,12 @@ export function ModuleCards() {
           <CardContent className="space-y-5">
             <div className="grid gap-3 md:grid-cols-3">
               <Info icon={CalendarDays} label="วันที่ติดตั้ง" value={formatDate(module.installationDate)} />
-              <Info icon={ShieldCheck} label="สุขภาพโมดูล" value={`${module.healthStatus}%`} />
+              <Info icon={ShieldCheck} label="สุขภาพชุดปฏิบัติการ" value={`${module.healthStatus}%`} />
               <Info icon={Layers3} label="ความเข้ากันได้" value={module.compatibility.join(", ")} />
             </div>
             <div>
               <div className="mb-2 flex items-center justify-between text-sm">
-                <span className="text-slate-500 dark:text-slate-400">ประสิทธิภาพโมดูล</span>
+                <span className="text-slate-500 dark:text-slate-400">ประสิทธิภาพชุดปฏิบัติการ</span>
                 <span className="font-semibold">{module.performance}%</span>
               </div>
               <Progress value={module.performance} />

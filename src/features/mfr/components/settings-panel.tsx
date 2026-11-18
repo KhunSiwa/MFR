@@ -27,7 +27,7 @@ export function SettingsPanel() {
 
       <SettingsCard title="ตั้งค่าหุ่นยนต์" description="การตั้งค่าหุ่นยนต์สำหรับ MVP">
         <div className="space-y-3">
-          <SettingRow icon={Wrench} label="โมดูลเริ่มต้น" value="ตรวจสอบผิวอาคาร" />
+          <SettingRow icon={Wrench} label="ชุดปฏิบัติการเริ่มต้น" value="ตรวจสอบผิวอาคาร" />
           <SettingRow icon={MonitorCog} label="โหมดฉุกเฉิน" value="เปิดควบคุมด้วยผู้ปฏิบัติงาน" />
         </div>
       </SettingsCard>

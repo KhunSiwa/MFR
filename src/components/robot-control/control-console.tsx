@@ -255,7 +255,7 @@ function RobotStatusPanel({ status, command }: { status: RobotStatus; command: R
         <StatusMeter icon={BatteryMedium} label="Battery Level" value={status.batteryLevel} suffix="%" />
         <StatusMeter icon={Radio} label="Signal Strength" value={status.signalStrength} suffix="%" />
         <StatusReadout icon={Gauge} label="Current Speed" value={`${command === "STOP" ? "0.00" : status.currentSpeed.toFixed(2)} m/s`} />
-        <StatusReadout icon={ShieldCheck} label="Current Module" value={status.currentModule} />
+        <StatusReadout icon={ShieldCheck} label="ชุดปฏิบัติการปัจจุบัน" value={status.currentModule} />
         <StatusReadout icon={Gamepad2} label="System Status" value={status.systemStatus} />
 
         <div className="rounded-lg border border-slate-200 p-4 dark:border-slate-800">

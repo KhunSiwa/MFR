@@ -8,7 +8,7 @@ import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { RobotHeroSlider } from "@/components/robot/robot-hero-slider";
 
 const productHighlights = [
-  { label: "หุ่นยนต์โมดูลาร์", icon: Bot },
+  { label: "หุ่นยนต์ชุดปฏิบัติการ", icon: Bot },
   { label: "ตรวจสอบด้วย AI", icon: BrainCircuit },
   { label: "บำรุงรักษาอัจฉริยะ", icon: Wrench },
 ];
@@ -41,7 +41,7 @@ export function LoginPage() {
             </span>
             <div>
               <div className="text-sm font-semibold">M.F.R.</div>
-              <div className="text-xs text-slate-500 dark:text-slate-400">ระบบ Modul Facade Rover</div>
+              <div className="text-xs text-slate-500 dark:text-slate-400">ระบบ Module Facade Rover</div>
             </div>
           </div>
           <ThemeToggle />
@@ -54,10 +54,10 @@ export function LoginPage() {
               แพลตฟอร์มสุขภาพผิวอาคารอัจฉริยะ
             </div>
             <h1 className="mt-7 text-5xl font-semibold leading-[0.95] tracking-tight sm:text-7xl">
-              M.F.R. Modul Facade Rover
+              M.F.R. Module Facade Rover
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-              หน้าแรกนี้เป็นเพียงหน้าแนะนำสินค้าและรายละเอียดงานของบริษัท: หุ่นยนต์โมดูลาร์สำหรับตรวจสอบ ทำความสะอาด วิเคราะห์ AI และรองรับการบำรุงรักษาเชิงคาดการณ์สำหรับอาคารอัจฉริยะ
+              หน้าแรกนี้เป็นเพียงหน้าแนะนำสินค้าและรายละเอียดงานของบริษัท: หุ่นยนต์ฐานกลางพร้อมชุดปฏิบัติการสำหรับตรวจสอบ ทำความสะอาด วิเคราะห์ AI และรองรับการบำรุงรักษาเชิงคาดการณ์สำหรับอาคารอัจฉริยะ
             </p>
 
             <form onSubmit={handleSubmit} className="mt-9 max-w-md rounded-[1.5rem] border border-white/70 bg-white/80 p-5 shadow-2xl shadow-slate-200/70 backdrop-blur dark:border-white/10 dark:bg-white/[0.06] dark:shadow-black/20">

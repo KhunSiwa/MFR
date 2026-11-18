@@ -9,7 +9,7 @@ export function ModuleTable() {
       <table className="w-full min-w-[960px] text-left text-sm">
         <thead className="bg-slate-50 text-xs uppercase text-slate-500 dark:bg-slate-900/60 dark:text-slate-400">
           <tr>
-            {["ชื่อโมดูล", "ประเภทโมดูล", "สถานะ", "วันที่ติดตั้ง", "ความเข้ากันได้", "สุขภาพ"].map((heading) => (
+            {["ชื่อชุดปฏิบัติการ", "ประเภทชุดปฏิบัติการ", "สถานะ", "วันที่ติดตั้ง", "ความเข้ากันได้", "สุขภาพ"].map((heading) => (
               <th key={heading} className="px-4 py-3 font-semibold">{heading}</th>
             ))}
           </tr>

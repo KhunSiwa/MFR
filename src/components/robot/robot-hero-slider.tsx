@@ -6,13 +6,13 @@ import { useEffect, useState } from "react";
 const robotImages = [
   {
     src: "/images/mfr-cleaner-module.png",
-    alt: "โมดูลทำความสะอาดของหุ่นยนต์ M.F.R.",
-    label: "Cleaner Module",
+    alt: "ชุดปฏิบัติการทำความสะอาดของหุ่นยนต์ M.F.R.",
+    label: "ชุดทำความสะอาด",
   },
   {
     src: "/images/mfr-camera-module.png",
-    alt: "โมดูลกล้องตรวจสอบของหุ่นยนต์ M.F.R.",
-    label: "Camera Module",
+    alt: "ชุดปฏิบัติการกล้องตรวจสอบของหุ่นยนต์ M.F.R.",
+    label: "ชุดกล้องตรวจสอบ",
   },
 ];
 
@@ -48,7 +48,7 @@ export function RobotHeroSlider({
           }`}
         />
       ))}
-      <div className="absolute bottom-4 right-4 z-10 flex gap-2" aria-label="ภาพโมดูลหุ่นยนต์">
+      <div className="absolute bottom-4 right-4 z-10 flex gap-2" aria-label="ภาพชุดปฏิบัติการหุ่นยนต์">
         {robotImages.map((image, index) => (
           <button
             key={image.src}

@@ -13,7 +13,7 @@ export function PlatformOverview() {
       <CardHeader>
         <CardTitle>สถาปัตยกรรมหุ่นยนต์ฐาน</CardTitle>
         <CardDescription>
-          หน่วยหุ่นยนต์หลักรองรับโมดูลสลับได้หลายประเภทสำหรับงานทำความสะอาด ตรวจสอบ สำรวจความร้อน และสื่อสารบนผิวอาคารแนวตั้ง
+          หน่วยหุ่นยนต์หลักรองรับชุดปฏิบัติการสลับได้หลายประเภทสำหรับงานทำความสะอาด ตรวจสอบ สำรวจความร้อน และสื่อสารบนผิวอาคารแนวตั้ง
         </CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">

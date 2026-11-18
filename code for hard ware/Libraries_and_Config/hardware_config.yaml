@@ -1,0 +1,38 @@
+# MFR Hardware Inventory Configuration (Default Safe Simulation Mode)
+hardware_verified: false
+simulation_default: true
+
+controller:
+  mcu: "ESP32-S3-WROOM"
+  logic_voltage_v: 3.3
+  variant_verified: false
+  usb_full_speed_only: true
+  usb_webcam_on_esp32_supported_for_prod: false
+
+driving_system:
+  motor_driver: "ZK-BM1"
+  zk_bm1_voltage_range_v: [3.0, 18.0]
+  zk_bm1_continuous_current_a: 10.0
+  zk_bm1_peak_current_a: 15.0
+  zk_bm1_max_pwm_hz: 2000
+  dc_gear_motor: "25GA (JGA25-370 class)"
+  dc_motor_voltage_v: null        # UNVERIFIED: 6V vs 12V on physical unit
+  dc_motor_stall_current_a: null  # UNVERIFIED: 1.0..3.7A typical
+  encoder_logic_v: null           # UNVERIFIED: 3.3V vs 5V level shift needed
+  brushless_esc_pwm_hz: 50
+  brushless_esc_disarm_us: 1000
+  brushless_motor_kv: null        # UNVERIFIED
+
+cleaner_module:
+  driver: "L9110S"
+  l9110s_voltage_range_v: [2.5, 12.0]
+  l9110s_continuous_ma: 800
+  l9110s_peak_ma: 1500
+  pump_voltage_v: null            # UNVERIFIED
+  pump_stall_ma: null             # UNVERIFIED
+  max_activation_sec: 15.0
+
+camera_system:
+  host: "computer_backend"
+  interface: "USB_UVC"
+  usb_to_jumper_gpio_allowed: false

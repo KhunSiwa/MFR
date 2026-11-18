@@ -13,7 +13,7 @@ export async function POST(request: Request) {
 
   if (!message) {
     return NextResponse.json(
-      { reply: "พิมพ์คำถามเกี่ยวกับ M.F.R. สถานะอาคาร การตรวจสอบด้วย AI โมดูล หรือการบำรุงรักษาได้เลยครับ" },
+      { reply: "พิมพ์คำถามเกี่ยวกับ M.F.R. สถานะอาคาร การตรวจสอบด้วย AI ชุดปฏิบัติการ หรือการบำรุงรักษาได้เลยครับ" },
       { status: 400 },
     );
   }
@@ -56,7 +56,7 @@ function buildAiReply(message: string) {
 
   if (matches(input, ["สนิม", "corrosion", "rust"])) {
     const rust = db.defects.filter((defect) => defect.type === "Rust");
-    return `พบสนิม ${rust.length} รายการ แนะนำทำความสะอาดผิว เคลือบป้องกัน และตรวจซ้ำด้วยโมดูลตรวจสอบหลังซ่อม จุดตัวอย่าง: ${rust
+    return `พบสนิม ${rust.length} รายการ แนะนำทำความสะอาดผิว เคลือบป้องกัน และตรวจซ้ำด้วยชุดปฏิบัติการตรวจสอบหลังซ่อม จุดตัวอย่าง: ${rust
       .slice(0, 3)
       .map((defect) => `${defect.id} ${defect.location}`)
       .join(", ")}.`;
@@ -67,11 +67,11 @@ function buildAiReply(message: string) {
     return `พบปัญหาซิลิโคน ${silicone.length} รายการ ควรเร่งดูจุดที่มีความเสี่ยงน้ำรั่วซึม โดยเฉพาะรายการความรุนแรงสูง และตั้งภารกิจตรวจซ้ำหลังซ่อม`;
   }
 
-  if (matches(input, ["module", "โมดูล", "cleaning", "solar", "inspection"])) {
+  if (matches(input, ["module", "โมดูล", "ชุดปฏิบัติการ", "cleaning", "solar", "inspection"])) {
     return [
-      `แพลตฟอร์มตอนนี้ติดตั้งโมดูล ${robotPlatform.installedModule}.`,
-      `มีโมดูลทั้งหมด ${robotModules.length} รายการ: ${robotModules.map((module) => `${module.name} (${moduleStatusLabel(module.status)})`).join(", ")}`,
-      "แนวคิดหลักคือใช้ฐานหุ่นยนต์เดียว แล้วเปลี่ยนโมดูลสำหรับทำความสะอาดกระจก ทำความสะอาดแผงโซลาร์ ตรวจรอยแตกร้าว ตรวจซิลิโคน ตรวจสนิม และตรวจสภาพพื้นผิว",
+      `แพลตฟอร์มตอนนี้ติดตั้งอยู่: ${robotPlatform.installedModule}.`,
+      `มีชุดปฏิบัติการทั้งหมด ${robotModules.length} รายการ: ${robotModules.map((module) => `${module.name} (${moduleStatusLabel(module.status)})`).join(", ")}`,
+      "แนวคิดหลักคือใช้ฐานหุ่นยนต์เดียว แล้วเปลี่ยนชุดปฏิบัติการสำหรับทำความสะอาดกระจก ทำความสะอาดแผงโซลาร์ ตรวจรอยแตกร้าว ตรวจซิลิโคน ตรวจสนิม และตรวจสภาพพื้นผิว",
     ].join("\n\n");
   }
 
@@ -87,7 +87,7 @@ function buildAiReply(message: string) {
       "คำแนะนำการบำรุงรักษา:",
       "1. จัดการตำหนิระดับ High/Critical ก่อน โดยเฉพาะรอยแตกร้าวและปัญหาซิลิโคนที่เสี่ยงน้ำรั่ว",
       `2. ตรวจซ้ำโซนคะแนนต่ำ: ${highRiskZones.map((zone) => zone.id).join(", ")}.`,
-      "3. ใช้โมดูลทำความสะอาดเพื่อลดคราบสะสม แล้วสแกนซ้ำเพื่อวัดคะแนนสุขภาพหลังทำความสะอาด",
+      "3. ใช้ชุดปฏิบัติการทำความสะอาดเพื่อลดคราบสะสม แล้วสแกนซ้ำเพื่อวัดคะแนนสุขภาพหลังทำความสะอาด",
       "4. สร้างรายงานสำหรับเจ้าของอาคารพร้อมหลักฐานภาพก่อน/หลัง",
     ].join("\n");
   }
@@ -100,7 +100,7 @@ function buildAiReply(message: string) {
     "- พบรอยแตกร้าวกี่จุด",
     "- แนะนำการบำรุงรักษา",
     "- สถานะหุ่นยนต์ / telemetry",
-    "- โมดูลไหนใช้งานอยู่",
+    "- ชุดปฏิบัติการไหนใช้งานอยู่",
   ].join("\n");
 }
 

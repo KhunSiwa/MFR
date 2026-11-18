@@ -37,7 +37,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             </span>
             <span>
               <span className="block text-sm font-semibold">ศูนย์ควบคุม M.F.R.</span>
-              <span className="block text-xs text-slate-500 dark:text-slate-400">ระบบ Modul Facade Rover</span>
+              <span className="block text-xs text-slate-500 dark:text-slate-400">ระบบ Module Facade Rover</span>
             </span>
           </Link>
 
@@ -69,7 +69,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                 หุ่นยนต์ออนไลน์
               </div>
               <p className="mt-2 text-xs leading-5 text-slate-500 dark:text-slate-400">
-                ภารกิจ MFR-024 กำลังทำงาน ระบบตรวจสอบ AI กล้อง telemetry และแดชบอร์ดโมดูลพร้อมใช้งาน
+                ภารกิจ MFR-024 กำลังทำงาน ระบบตรวจสอบ AI กล้อง telemetry และแดชบอร์ดชุดปฏิบัติการพร้อมใช้งาน
               </p>
             </div>
             <Link

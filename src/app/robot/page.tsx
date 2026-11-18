@@ -13,14 +13,14 @@ export default function RobotPage() {
       <PageHeader
         eyebrow="หุ่นยนต์"
         title="การปฏิบัติงานของหุ่นยนต์"
-        description="สถานะ ตำแหน่ง แบตเตอรี่ ภารกิจปัจจุบัน โมดูล และชุดควบคุมภารกิจหลัก"
+        description="สถานะ ตำแหน่ง แบตเตอรี่ ภารกิจปัจจุบัน ชุดปฏิบัติการ และชุดควบคุมภารกิจหลัก"
       />
 
       <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
         <RobotCard icon={Bot} label="สถานะ" value={robotPlatform.fleetStatus} />
         <RobotCard icon={BatteryMedium} label="แบตเตอรี่" value={`${robotTwin.batteryStatus}%`} />
         <RobotCard icon={MapPin} label="ตำแหน่ง" value={robotTwin.position} />
-        <RobotCard icon={PackageCheck} label="โมดูลปัจจุบัน" value={robotTwin.currentModule} />
+        <RobotCard icon={PackageCheck} label="ชุดปฏิบัติการปัจจุบัน" value={robotTwin.currentModule} />
       </div>
 
       <RobotActions />

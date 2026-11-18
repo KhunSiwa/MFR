@@ -1,0 +1,18 @@
+{
+  "verified": false,
+  "warning": "Pin assignments are intentionally unassigned (-1) until physical PCB continuity and voltage measurements are logged.",
+  "pins": {
+    "ZKBM1_LEFT_IN1_GPIO": -1,
+    "ZKBM1_LEFT_IN2_GPIO": -1,
+    "ZKBM1_RIGHT_IN3_GPIO": -1,
+    "ZKBM1_RIGHT_IN4_GPIO": -1,
+    "ENC_LEFT_A_GPIO": -1,
+    "ENC_LEFT_B_GPIO": -1,
+    "ENC_RIGHT_A_GPIO": -1,
+    "ENC_RIGHT_B_GPIO": -1,
+    "IMPELLER_ESC_PWM_GPIO": -1,
+    "L9110S_PUMP_IA_GPIO": -1,
+    "L9110S_PUMP_IB_GPIO": -1,
+    "ESTOP_AUX_SENSE_GPIO": -1
+  }
+}

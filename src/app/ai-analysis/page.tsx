@@ -19,9 +19,9 @@ export default function AiAnalysisPage() {
   return (
     <div className="space-y-8">
       <PageHeader
-        eyebrow="วิเคราะห์ AI"
+        eyebrow="วิเคราะห์ AI 06"
         title="ระบบวิเคราะห์ผิวอาคารด้วย AI"
-        description="คะแนนสุขภาพผิวอาคาร คะแนนความเสี่ยง คำแนะนำ AI การบำรุงรักษาเชิงคาดการณ์ อายุคงเหลือ และสรุปการตรวจสอบ"
+        description="เชื่อมต่อ PyTorch AI 06 โดยตรงบนเว็บไซต์หลัก · ตรวจจับรอยแตกร้าว สนิม ซิลิโคน คราบน้ำ · คำแนะนำและสรุปการตรวจสอบ"
       />
 
       <div className="grid gap-5 xl:grid-cols-[360px_minmax(0,1fr)]">
@@ -34,8 +34,8 @@ export default function AiAnalysisPage() {
         </div>
       </div>
 
-      <RecommendationCard items={aiRecommendations} />
       <AnalysisPanel images={analysisImages} />
+      <RecommendationCard items={aiRecommendations} />
       <AiChatConsole />
     </div>
   );

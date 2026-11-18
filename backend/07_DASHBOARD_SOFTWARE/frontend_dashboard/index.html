@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MFR Master Dashboard — Module Facade Rover (Offline M7 Console)</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <!-- Permanent Truthfulness & Safety Banner -->
+  <div class="truth-banner" role="status" aria-live="polite">
+    <span class="truth-pill truth-pill-warn">CV: SMOKE-TEST FIXTURE ONLY — Real Accuracy NOT EVALUATED</span>
+    <span class="truth-sep">|</span>
+    <span class="truth-pill truth-pill-safety">AI: Advisory Only — Hardware E-Stop &amp; Roof Tether Independent</span>
+    <span class="truth-sep">|</span>
+    <span class="truth-pill truth-pill-net">OFFLINE LOCALHOST (127.0.0.1)</span>
+  </div>
+
+  <!-- Top Navigation Header -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="/assets/MFR_logo_original.png" alt="Module Facade Rover Logo" class="brand-logo">
+      <div class="brand-meta">
+        <h1>Module Facade Rover (MFR)</h1>
+        <p class="subtitle">M7 Engineering Backend, Database &amp; Advisory CV Console</p>
+      </div>
+    </div>
+
+    <div class="header-status">
+      <span class="status-chip" id="hdr-db-chip">DB: Checking...</span>
+      <span class="status-chip" id="hdr-cv-chip">CV: Checking...</span>
+      <span class="status-chip status-chip-lock">Safety Override: LOCKED FALSE</span>
+    </div>
+  </header>
+
+  <!-- Primary Navigation Tabs -->
+  <nav class="tabbar" aria-label="Dashboard Sections">
+    <button class="tab-btn active" data-tab="overview">Overview &amp; Safety</button>
+    <button class="tab-btn" data-tab="inspector">AI Defect Inspector</button>
+    <button class="tab-btn" data-tab="history">Inspection History</button>
+    <button class="tab-btn" data-tab="telemetry">Telemetry &amp; E-Stop</button>
+    <button class="tab-btn" data-tab="surfacego">SurfaceGo Sync</button>
+  </nav>
+
+  <main class="container">
+    <!-- TAB 1: Overview & Safety -->
+    <section id="tab-overview" class="tab-panel active">
+      <div class="kpi-grid">
+        <article class="card">
+          <div class="card-head">
+            <h2>Prototype Chassis (SSOT Verified CAD)</h2>
+            <span class="badge badge-amber" id="ov-robot-status">IN_DEVELOPMENT</span>
+          </div>
+          <div class="kv-list" id="ov-robot-specs">
+            <div class="kv-row"><span>Robot ID</span><strong>MFR-BASE-01</strong></div>
+            <div class="kv-row"><span>CAD Envelope</span><strong>224.0 × 220.2 × 228.0 mm</strong></div>
+            <div class="kv-row"><span>Wheelbase</span><strong>135.0 mm (Ground Base)</strong></div>
+            <div class="kv-row"><span>Vertical Glass Certified</span><strong class="text-danger">FALSE (Ground Only)</strong></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2>Advisory CV Model Status</h2>
+            <span class="badge badge-warn" id="ov-model-tier">SMOKE_TEST_FIXTURE_ONLY</span>
+          </div>
+          <div class="kv-list" id="ov-model-specs">
+            <div class="kv-row"><span>Model</span><strong>Loading...</strong></div>
+            <div class="kv-row"><span>Real Facade Accuracy</span><strong class="text-danger">NOT TRAINED / NOT EVALUATED</strong></div>
+            <div class="kv-row"><span>Smoke-Test Fixture</span><strong>Loading...</strong></div>
+            <div class="kv-row"><span>Weights SHA-256</span><strong class="mono">Loading...</strong></div>
+          </div>
+        </article>
+
+        <article class="card card-safety">
+          <div class="card-head">
+            <h2>Hardware Safety Isolation</h2>
+            <span class="badge badge-cyan">LAYER 4 ADVISORY ONLY</span>
+          </div>
+          <div class="kv-list">
+            <div class="kv-row"><span>ai_safety_control_enabled</span><strong class="text-danger">FALSE (DB &amp; API Enforced)</strong></div>
+            <div class="kv-row"><span>estop_override_allowed</span><strong class="text-danger">FALSE (Hardware Independent)</strong></div>
+            <div class="kv-row"><span>safety_actuation_allowed</span><strong class="text-danger">FALSE (Zero PWM/Tether Links)</strong></div>
+          </div>
+          <div class="card-actions">
+            <button id="btn-test-safety-403" class="btn btn-danger-outline" type="button">
+              Test 403 Safety Isolation Guard
+            </button>
+          </div>
+          <pre class="inline-log" id="safety-test-output">Click to verify backend rejects AI E-stop override with HTTP 403 and logs audit event.</pre>
+        </article>
+      </div>
+
+      <div class="two-col">
+        <article class="card">
+          <div class="card-head">
+            <h2>Prohibited Software / AI Actions</h2>
+            <span class="badge badge-danger">HARD BLOCKED</span>
+          </div>
+          <ul class="policy-list" id="ov-prohibited-list">
+            <li>Loading safety policy...</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2>Recent Safety Audit Events</h2>
+            <button class="btn btn-sm" id="btn-refresh-overview" type="button">Refresh</button>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Severity</th>
+                  <th>Event Type</th>
+                  <th>Blocked</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody id="ov-safety-tbody">
+                <tr><td colspan="5">Loading...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TAB 2: AI Defect Inspector -->
+    <section id="tab-inspector" class="tab-panel">
+      <div class="inspector-layout">
+        <article class="card">
+          <div class="card-head">
+            <h2>1. Select Sample or Upload Facade Image</h2>
+            <span class="badge badge-warn">ADVISORY ONLY</span>
+          </div>
+
+          <div class="sample-quickbar">
+            <button class="btn btn-primary btn-sm quick-sample" data-sample="smoke_test_c0_00.png" type="button">
+              Inspect Smoke Fixture (Crack)
+            </button>
+            <button class="btn btn-secondary btn-sm quick-sample" data-sample="S01_audit_tile_00.png" type="button">
+              Inspect Unlabeled Curtain-Wall (S01)
+            </button>
+            <button class="btn btn-secondary btn-sm quick-sample" data-sample="S04_audit_tile_00.png" type="button">
+              Inspect Unlabeled Curtain-Wall (S04)
+            </button>
+          </div>
+
+          <div class="form-row">
+            <label for="sample-select">Whitelisted Workspace Samples</label>
+            <div class="input-group">
+              <select id="sample-select"></select>
+              <button id="btn-run-sample" class="btn btn-primary" type="button">Run Sample Inference</button>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="file-upload">Or Upload Local Image (PNG / JPG / WEBP, max 10 MiB)</label>
+            <div class="input-group">
+              <input id="file-upload" type="file" accept=".png,.jpg,.jpeg,.bmp,.webp,image/*">
+              <button id="btn-run-upload" class="btn btn-primary" type="button">Upload &amp; Inspect</button>
+            </div>
+          </div>
+
+          <div class="canvas-stage">
+            <canvas id="bbox-canvas" width="512" height="512"></canvas>
+            <p class="canvas-caption" id="canvas-caption">
+              Select a sample or upload an image to run advisory CV inference and persist to SQLAlchemy DB.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2>2. Persisted Inspection &amp; Advisory Output</h2>
+            <span class="badge badge-cyan" id="insp-id-badge">No Run Yet</span>
+          </div>
+
+          <div class="alert-box alert-warn" id="insp-disclaimer">
+            SMOKE_TEST_FIXTURE_ONLY (Real Facade Accuracy: NOT TRAINED / NOT EVALUATED)
+          </div>
+
+          <div class="kv-list" id="insp-meta">
+            <div class="kv-row"><span>Source</span><strong>—</strong></div>
+            <div class="kv-row"><span>Primary Advisory Class</span><strong>—</strong></div>
+            <div class="kv-row"><span>Confidence</span><strong>—</strong></div>
+            <div class="kv-row"><span>Latency</span><strong>—</strong></div>
+            <div class="kv-row"><span>Input SHA-256</span><strong class="mono">—</strong></div>
+            <div class="kv-row"><span>Human Review</span><strong>—</strong></div>
+          </div>
+
+          <h3>5-Class Probability Distribution (Advisory)</h3>
+          <div id="prob-bars" class="prob-bars">
+            <p class="muted">Run inference to view class scores.</p>
+          </div>
+
+          <div class="review-actions" id="review-actions">
+            <span>Human Structural Review:</span>
+            <button class="btn btn-sm btn-secondary" id="btn-review-confirm" type="button" disabled>Confirm Flag</button>
+            <button class="btn btn-sm btn-danger-outline" id="btn-review-dismiss" type="button" disabled>Dismiss False Positive</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TAB 3: Inspection History -->
+    <section id="tab-history" class="tab-panel">
+      <article class="card">
+        <div class="card-head">
+          <h2>Persisted Inspection Ledger (SQLAlchemy DB)</h2>
+          <div class="head-controls">
+            <span class="badge badge-cyan" id="hist-count-badge">0 records</span>
+            <button class="btn btn-sm" id="btn-refresh-history" type="button">Refresh</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Timestamp</th>
+                <th>Source Tier</th>
+                <th>Image Name</th>
+                <th>Advisory Prediction</th>
+                <th>Confidence</th>
+                <th>Latency (ms)</th>
+                <th>Advisory Only</th>
+                <th>Review Status</th>
+                <th>SHA-256 (Prefix)</th>
+              </tr>
+            </thead>
+            <tbody id="history-tbody">
+              <tr><td colspan="10">Loading inspection history...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <!-- TAB 4: Telemetry & E-Stop -->
+    <section id="tab-telemetry" class="tab-panel">
+      <div class="kpi-grid">
+        <article class="card">
+          <div class="card-head">
+            <h2>Telemetry Source Segregation</h2>
+            <span class="badge badge-amber">STRICT TAGS</span>
+          </div>
+          <div class="kv-list" id="tel-source-counts">
+            <div class="kv-row"><span>SIMULATED_MOCK</span><strong>0</strong></div>
+            <div class="kv-row"><span>LIVE_BENCH</span><strong>0</strong></div>
+            <div class="kv-row"><span>UNCONNECTED</span><strong>0</strong></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2>Log Ground / Bench Telemetry</h2>
+            <span class="badge badge-cyan">HORIZONTAL ONLY</span>
+          </div>
+          <form id="telemetry-form" class="tel-form">
+            <div class="form-grid">
+              <label>Source
+                <select name="telemetry_source">
+                  <option value="SIMULATED_MOCK">SIMULATED_MOCK</option>
+                  <option value="LIVE_BENCH">LIVE_BENCH</option>
+                  <option value="UNCONNECTED">UNCONNECTED</option>
+                </select>
+              </label>
+              <label>System State
+                <select name="system_state">
+                  <option value="NORMAL">NORMAL</option>
+                  <option value="E_STOP">E_STOP</option>
+                  <option value="CAMERA_DISCONNECTED">CAMERA_DISCONNECTED</option>
+                  <option value="COMMUNICATION_FAILURE">COMMUNICATION_FAILURE</option>
+                  <option value="MOTOR_FAULT">MOTOR_FAULT</option>
+                  <option value="UNCONNECTED">UNCONNECTED</option>
+                </select>
+              </label>
+              <label>Surface Mode
+                <select name="surface_mode">
+                  <option value="HORIZONTAL_GROUND_ONLY">HORIZONTAL_GROUND_ONLY</option>
+                  <option value="BENCH_RIG_NO_LOAD">BENCH_RIG_NO_LOAD</option>
+                </select>
+              </label>
+              <label>Battery (V)
+                <input type="number" step="0.1" name="battery_voltage_v" value="12.0">
+              </label>
+            </div>
+            <div class="form-inline">
+              <label class="checkbox-lbl">
+                <input type="checkbox" name="hardware_estop_engaged" checked>
+                Hardware E-Stop Engaged (Read-Only State)
+              </label>
+              <button type="submit" class="btn btn-primary btn-sm">Append Telemetry Row</button>
+            </div>
+            <p class="muted" id="tel-form-status"></p>
+          </form>
+        </article>
+      </div>
+
+      <article class="card">
+        <div class="card-head">
+          <h2>Telemetry Stream Log</h2>
+          <div class="head-controls">
+            <select id="tel-filter">
+              <option value="">All Sources</option>
+              <option value="SIMULATED_MOCK">SIMULATED_MOCK</option>
+              <option value="LIVE_BENCH">LIVE_BENCH</option>
+              <option value="UNCONNECTED">UNCONNECTED</option>
+            </select>
+            <button class="btn btn-sm" id="btn-refresh-telemetry" type="button">Refresh</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Recorded At</th>
+                <th>Source Badge</th>
+                <th>System State</th>
+                <th>Surface Mode</th>
+                <th>Battery (V)</th>
+                <th>Hardware E-Stop</th>
+                <th>AI Safety Control</th>
+                <th>Note</th>
+              </tr>
+            </thead>
+            <tbody id="telemetry-tbody">
+              <tr><td colspan="9">Loading telemetry...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <!-- TAB 5: SurfaceGo Sync -->
+    <section id="tab-surfacego" class="tab-panel">
+      <div class="alert-box alert-warn">
+        <strong>T4 UI MOCKUP &amp; INTEGRATION BOUNDARY:</strong> External repository edits remain untouched pending Project Owner authorization. Below is the audited <code>SurfaceGo</code> companion contract derived from SSOT §3.5 &amp; <code>Engineering_QA.md</code> §8.1.
+      </div>
+
+      <div class="two-col">
+        <article class="card">
+          <div class="card-head">
+            <h2>Audited SurfaceGo Companion Routes</h2>
+            <span class="badge badge-amber" id="sg-status-badge">T4_UI_MOCKUP_CONCEPT_ONLY</span>
+          </div>
+          <div class="route-pills" id="sg-routes-list">
+            <span class="route-pill">Loading...</span>
+          </div>
+          <h3>Mockup Placeholder KPIs (NOT Live Commercial Metrics)</h3>
+          <div class="kv-list" id="sg-kpis">
+            <div class="kv-row"><span>Loading...</span><strong>—</strong></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2>Ready-to-Drop Next.js Integration</h2>
+            <span class="badge badge-cyan">127.0.0.1:8000</span>
+          </div>
+          <p class="muted">
+            Use <code>frontend_dashboard/mfrApiClient.ts</code> and <code>SURFACEGO_INTEGRATION_GUIDE.md</code> when integrating the external Next.js <code>SurfaceGo</code> frontend with this M7 FastAPI backend.
+          </p>
+          <ul class="policy-list">
+            <li><strong>Env Var:</strong> <code>NEXT_PUBLIC_MFR_API_BASE</code> -> local host <code>127.0.0.1:8000</code> (see <code>SURFACEGO_INTEGRATION_GUIDE.md</code>)</li>
+            <li><strong>CORS Policy:</strong> Restricted to <code>127.0.0.1:3000</code> &amp; <code>localhost:3000</code></li>
+            <li><strong>Mandatory UI Invariant:</strong> Always display <code>disclaimer</code> and <code>telemetry_source</code> badge on <code>/tracking</code>, <code>/result</code>, and <code>/admin</code>.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

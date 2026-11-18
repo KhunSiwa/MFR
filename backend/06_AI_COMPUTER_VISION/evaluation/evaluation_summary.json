@@ -1,0 +1,689 @@
+{
+  "disclaimer": "[PIPELINE SMOKE-TEST ONLY \u2014 PROCEDURAL FIXTURE; REAL FACADE ACCURACY = NOT TRAINED / NOT EVALUATED]",
+  "is_real_facade_evaluated": false,
+  "real_facade_status": "NOT TRAINED / NOT EVALUATED (0 real labeled defect images)",
+  "dataset_tier": "SMOKE_TEST_FIXTURE_ONLY",
+  "advisory_only": true,
+  "safety_actuation_allowed": false,
+  "weights_path": "/Users/Siwakorn/Downloads/mfr/MFR_MASTER/06_AI_COMPUTER_VISION/training_pipeline/weights/mfr_smoke_best.pt",
+  "weights_sha256": "cbb0c4d4d6c8da6eb6c5239e217ba167302d3c78d33fad87712d4f9ee96949c7",
+  "test_sample_count": 25,
+  "smoke_test_accuracy": 1.0,
+  "smoke_test_macro_f1": 1.0,
+  "smoke_test_mean_iou_all": 0.6113,
+  "smoke_test_mean_iou_defects_0_to_3": 0.5221,
+  "confusion_matrix_rows_gt_cols_pred": [
+    [
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      5,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      5,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      5,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      5
+    ]
+  ],
+  "per_class_metrics": {
+    "Crack": {
+      "class_id": 0,
+      "support": 5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "mean_iou": 0.4283
+    },
+    "Sealant deterioration": {
+      "class_id": 1,
+      "support": 5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "mean_iou": 0.4417
+    },
+    "Rust / corrosion": {
+      "class_id": 2,
+      "support": 5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "mean_iou": 0.5634
+    },
+    "Water stain": {
+      "class_id": 3,
+      "support": 5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "mean_iou": 0.6549
+    },
+    "Normal surface": {
+      "class_id": 4,
+      "support": 5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "mean_iou": 0.9682
+    }
+  },
+  "host_inference_latency": {
+    "cpu": {
+      "device": "cpu",
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "warmup_iters": 10,
+      "measured_iters": 50,
+      "mean_ms_per_frame": 4.228,
+      "p50_ms_per_frame": 4.152,
+      "p95_ms_per_frame": 4.872,
+      "theoretical_fps": 236.5,
+      "note": "Smoke-test MFRDefectNet forward-pass only (excludes network/MJPEG decode; NOT production YOLOv8)"
+    },
+    "mps": {
+      "device": "mps",
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "warmup_iters": 10,
+      "measured_iters": 50,
+      "mean_ms_per_frame": 1.238,
+      "p50_ms_per_frame": 1.064,
+      "p95_ms_per_frame": 2.59,
+      "theoretical_fps": 807.8,
+      "note": "Smoke-test MFRDefectNet forward-pass only (excludes network/MJPEG decode; NOT production YOLOv8)"
+    }
+  },
+  "unlabeled_audit_inference_check": [
+    {
+      "tile_filename": "S01_audit_tile_00.png",
+      "tile_sha256": "820891437eee7056943a49306b735545c7e4e7ac524604d97d3a37fe4f2f980b",
+      "ground_truth_available": false,
+      "advisory_only": true,
+      "raw_pred_class_id": 1,
+      "raw_pred_class_name": "Sealant deterioration",
+      "raw_confidence": 1.0,
+      "raw_bbox_cxcywh": [
+        0.73967,
+        0.39064,
+        0.0,
+        0.28077
+      ],
+      "note": "Unlabeled real curtain-wall tile sanity pass; NOT a valid accuracy measurement."
+    },
+    {
+      "tile_filename": "S04_audit_tile_00.png",
+      "tile_sha256": "84a98eb3e9521a52f114e688709383a7310f514b8d8144e6ae6f254c7ea7c9c3",
+      "ground_truth_available": false,
+      "advisory_only": true,
+      "raw_pred_class_id": 3,
+      "raw_pred_class_name": "Water stain",
+      "raw_confidence": 1.0,
+      "raw_bbox_cxcywh": [
+        0.53394,
+        0.90308,
+        0.47878,
+        0.64524
+      ],
+      "note": "Unlabeled real curtain-wall tile sanity pass; NOT a valid accuracy measurement."
+    }
+  ],
+  "sample_predictions": [
+    {
+      "filename": "smoke_test_c0_00.png",
+      "gt_class_id": 0,
+      "gt_class_name": "Crack",
+      "pred_class_id": 0,
+      "pred_class_name": "Crack",
+      "confidence": 0.8657,
+      "gt_bbox_cxcywh": [
+        0.35352,
+        0.20898,
+        0.38672,
+        0.15234
+      ],
+      "pred_bbox_cxcywh": [
+        0.43223,
+        0.27978,
+        0.63966,
+        0.4765
+      ],
+      "iou": 0.1933
+    },
+    {
+      "filename": "smoke_test_c0_01.png",
+      "gt_class_id": 0,
+      "gt_class_name": "Crack",
+      "pred_class_id": 0,
+      "pred_class_name": "Crack",
+      "confidence": 0.8383,
+      "gt_bbox_cxcywh": [
+        0.31836,
+        0.13672,
+        0.33203,
+        0.19531
+      ],
+      "pred_bbox_cxcywh": [
+        0.40375,
+        0.24801,
+        0.794,
+        0.59422
+      ],
+      "iou": 0.1374
+    },
+    {
+      "filename": "smoke_test_c0_02.png",
+      "gt_class_id": 0,
+      "gt_class_name": "Crack",
+      "pred_class_id": 0,
+      "pred_class_name": "Crack",
+      "confidence": 0.7578,
+      "gt_bbox_cxcywh": [
+        0.52148,
+        0.59766,
+        0.35547,
+        0.17188
+      ],
+      "pred_bbox_cxcywh": [
+        0.51954,
+        0.56038,
+        0.4259,
+        0.29049
+      ],
+      "iou": 0.4938
+    },
+    {
+      "filename": "smoke_test_c0_03.png",
+      "gt_class_id": 0,
+      "gt_class_name": "Crack",
+      "pred_class_id": 0,
+      "pred_class_name": "Crack",
+      "confidence": 0.9371,
+      "gt_bbox_cxcywh": [
+        0.56445,
+        0.63867,
+        0.41797,
+        0.16797
+      ],
+      "pred_bbox_cxcywh": [
+        0.57244,
+        0.64351,
+        0.48643,
+        0.1913
+      ],
+      "iou": 0.7545
+    },
+    {
+      "filename": "smoke_test_c0_04.png",
+      "gt_class_id": 0,
+      "gt_class_name": "Crack",
+      "pred_class_id": 0,
+      "pred_class_name": "Crack",
+      "confidence": 0.9318,
+      "gt_bbox_cxcywh": [
+        0.43164,
+        0.3457,
+        0.36328,
+        0.23047
+      ],
+      "pred_bbox_cxcywh": [
+        0.42422,
+        0.38959,
+        0.45017,
+        0.21565
+      ],
+      "iou": 0.5625
+    },
+    {
+      "filename": "smoke_test_c1_00.png",
+      "gt_class_id": 1,
+      "gt_class_name": "Sealant deterioration",
+      "pred_class_id": 1,
+      "pred_class_name": "Sealant deterioration",
+      "confidence": 0.6642,
+      "gt_bbox_cxcywh": [
+        0.76562,
+        0.24414,
+        0.125,
+        0.31641
+      ],
+      "pred_bbox_cxcywh": [
+        0.75531,
+        0.24831,
+        0.3038,
+        0.32117
+      ],
+      "iou": 0.4021
+    },
+    {
+      "filename": "smoke_test_c1_01.png",
+      "gt_class_id": 1,
+      "gt_class_name": "Sealant deterioration",
+      "pred_class_id": 1,
+      "pred_class_name": "Sealant deterioration",
+      "confidence": 0.7605,
+      "gt_bbox_cxcywh": [
+        0.4043,
+        0.71094,
+        0.36328,
+        0.125
+      ],
+      "pred_bbox_cxcywh": [
+        0.37963,
+        0.67982,
+        0.36387,
+        0.31308
+      ],
+      "iou": 0.3622
+    },
+    {
+      "filename": "smoke_test_c1_02.png",
+      "gt_class_id": 1,
+      "gt_class_name": "Sealant deterioration",
+      "pred_class_id": 1,
+      "pred_class_name": "Sealant deterioration",
+      "confidence": 0.9177,
+      "gt_bbox_cxcywh": [
+        0.47656,
+        0.52734,
+        0.125,
+        0.38281
+      ],
+      "pred_bbox_cxcywh": [
+        0.45925,
+        0.51223,
+        0.32433,
+        0.22642
+      ],
+      "iou": 0.3044
+    },
+    {
+      "filename": "smoke_test_c1_03.png",
+      "gt_class_id": 1,
+      "gt_class_name": "Sealant deterioration",
+      "pred_class_id": 1,
+      "pred_class_name": "Sealant deterioration",
+      "confidence": 0.961,
+      "gt_bbox_cxcywh": [
+        0.29688,
+        0.38672,
+        0.125,
+        0.42969
+      ],
+      "pred_bbox_cxcywh": [
+        0.27159,
+        0.3683,
+        0.15258,
+        0.3128
+      ],
+      "iou": 0.5385
+    },
+    {
+      "filename": "smoke_test_c1_04.png",
+      "gt_class_id": 1,
+      "gt_class_name": "Sealant deterioration",
+      "pred_class_id": 1,
+      "pred_class_name": "Sealant deterioration",
+      "confidence": 0.966,
+      "gt_bbox_cxcywh": [
+        0.49609,
+        0.35547,
+        0.125,
+        0.48438
+      ],
+      "pred_bbox_cxcywh": [
+        0.48578,
+        0.3396,
+        0.16021,
+        0.35071
+      ],
+      "iou": 0.6014
+    },
+    {
+      "filename": "smoke_test_c2_00.png",
+      "gt_class_id": 2,
+      "gt_class_name": "Rust / corrosion",
+      "pred_class_id": 2,
+      "pred_class_name": "Rust / corrosion",
+      "confidence": 0.7238,
+      "gt_bbox_cxcywh": [
+        0.54297,
+        0.32617,
+        0.24219,
+        0.30078
+      ],
+      "pred_bbox_cxcywh": [
+        0.52999,
+        0.34902,
+        0.36564,
+        0.33791
+      ],
+      "iou": 0.5764
+    },
+    {
+      "filename": "smoke_test_c2_01.png",
+      "gt_class_id": 2,
+      "gt_class_name": "Rust / corrosion",
+      "pred_class_id": 2,
+      "pred_class_name": "Rust / corrosion",
+      "confidence": 0.9712,
+      "gt_bbox_cxcywh": [
+        0.7207,
+        0.66211,
+        0.34766,
+        0.27734
+      ],
+      "pred_bbox_cxcywh": [
+        0.73463,
+        0.66008,
+        0.335,
+        0.3127
+      ],
+      "iou": 0.8227
+    },
+    {
+      "filename": "smoke_test_c2_02.png",
+      "gt_class_id": 2,
+      "gt_class_name": "Rust / corrosion",
+      "pred_class_id": 2,
+      "pred_class_name": "Rust / corrosion",
+      "confidence": 0.8185,
+      "gt_bbox_cxcywh": [
+        0.27148,
+        0.42773,
+        0.26172,
+        0.24609
+      ],
+      "pred_bbox_cxcywh": [
+        0.33754,
+        0.46749,
+        0.36094,
+        0.33378
+      ],
+      "iou": 0.4847
+    },
+    {
+      "filename": "smoke_test_c2_03.png",
+      "gt_class_id": 2,
+      "gt_class_name": "Rust / corrosion",
+      "pred_class_id": 2,
+      "pred_class_name": "Rust / corrosion",
+      "confidence": 0.915,
+      "gt_bbox_cxcywh": [
+        0.5332,
+        0.79492,
+        0.23828,
+        0.31641
+      ],
+      "pred_bbox_cxcywh": [
+        0.57371,
+        0.66536,
+        0.36488,
+        0.1479
+      ],
+      "iou": 0.233
+    },
+    {
+      "filename": "smoke_test_c2_04.png",
+      "gt_class_id": 2,
+      "gt_class_name": "Rust / corrosion",
+      "pred_class_id": 2,
+      "pred_class_name": "Rust / corrosion",
+      "confidence": 0.9836,
+      "gt_bbox_cxcywh": [
+        0.60156,
+        0.5625,
+        0.36719,
+        0.34375
+      ],
+      "pred_bbox_cxcywh": [
+        0.55886,
+        0.55864,
+        0.3815,
+        0.29783
+      ],
+      "iou": 0.7002
+    },
+    {
+      "filename": "smoke_test_c3_00.png",
+      "gt_class_id": 3,
+      "gt_class_name": "Water stain",
+      "pred_class_id": 3,
+      "pred_class_name": "Water stain",
+      "confidence": 0.993,
+      "gt_bbox_cxcywh": [
+        0.53906,
+        0.32422,
+        0.3125,
+        0.3125
+      ],
+      "pred_bbox_cxcywh": [
+        0.56591,
+        0.31488,
+        0.22967,
+        0.36076
+      ],
+      "iou": 0.66
+    },
+    {
+      "filename": "smoke_test_c3_01.png",
+      "gt_class_id": 3,
+      "gt_class_name": "Water stain",
+      "pred_class_id": 3,
+      "pred_class_name": "Water stain",
+      "confidence": 0.9835,
+      "gt_bbox_cxcywh": [
+        0.60156,
+        0.47266,
+        0.21094,
+        0.32812
+      ],
+      "pred_bbox_cxcywh": [
+        0.57354,
+        0.46872,
+        0.26066,
+        0.39004
+      ],
+      "iou": 0.6638
+    },
+    {
+      "filename": "smoke_test_c3_02.png",
+      "gt_class_id": 3,
+      "gt_class_name": "Water stain",
+      "pred_class_id": 3,
+      "pred_class_name": "Water stain",
+      "confidence": 0.9968,
+      "gt_bbox_cxcywh": [
+        0.23828,
+        0.29883,
+        0.28125,
+        0.37891
+      ],
+      "pred_bbox_cxcywh": [
+        0.23506,
+        0.30857,
+        0.31434,
+        0.45437
+      ],
+      "iou": 0.7461
+    },
+    {
+      "filename": "smoke_test_c3_03.png",
+      "gt_class_id": 3,
+      "gt_class_name": "Water stain",
+      "pred_class_id": 3,
+      "pred_class_name": "Water stain",
+      "confidence": 0.9867,
+      "gt_bbox_cxcywh": [
+        0.78516,
+        0.42773,
+        0.27344,
+        0.46484
+      ],
+      "pred_bbox_cxcywh": [
+        0.72439,
+        0.44965,
+        0.29613,
+        0.40185
+      ],
+      "iou": 0.5767
+    },
+    {
+      "filename": "smoke_test_c3_04.png",
+      "gt_class_id": 3,
+      "gt_class_name": "Water stain",
+      "pred_class_id": 3,
+      "pred_class_name": "Water stain",
+      "confidence": 0.9896,
+      "gt_bbox_cxcywh": [
+        0.33984,
+        0.59375,
+        0.28906,
+        0.48438
+      ],
+      "pred_bbox_cxcywh": [
+        0.30366,
+        0.64334,
+        0.29919,
+        0.37897
+      ],
+      "iou": 0.628
+    },
+    {
+      "filename": "smoke_test_c4_00.png",
+      "gt_class_id": 4,
+      "gt_class_name": "Normal surface",
+      "pred_class_id": 4,
+      "pred_class_name": "Normal surface",
+      "confidence": 0.9747,
+      "gt_bbox_cxcywh": [
+        0.5,
+        0.5,
+        0.85156,
+        0.85156
+      ],
+      "pred_bbox_cxcywh": [
+        0.503,
+        0.49293,
+        0.87093,
+        0.86777
+      ],
+      "iou": 0.9595
+    },
+    {
+      "filename": "smoke_test_c4_01.png",
+      "gt_class_id": 4,
+      "gt_class_name": "Normal surface",
+      "pred_class_id": 4,
+      "pred_class_name": "Normal surface",
+      "confidence": 0.9663,
+      "gt_bbox_cxcywh": [
+        0.5,
+        0.5,
+        0.85156,
+        0.85156
+      ],
+      "pred_bbox_cxcywh": [
+        0.50722,
+        0.49554,
+        0.85716,
+        0.8442
+      ],
+      "iou": 0.9731
+    },
+    {
+      "filename": "smoke_test_c4_02.png",
+      "gt_class_id": 4,
+      "gt_class_name": "Normal surface",
+      "pred_class_id": 4,
+      "pred_class_name": "Normal surface",
+      "confidence": 0.9565,
+      "gt_bbox_cxcywh": [
+        0.5,
+        0.5,
+        0.85156,
+        0.85156
+      ],
+      "pred_bbox_cxcywh": [
+        0.49562,
+        0.50056,
+        0.83918,
+        0.84608
+      ],
+      "iou": 0.9791
+    },
+    {
+      "filename": "smoke_test_c4_03.png",
+      "gt_class_id": 4,
+      "gt_class_name": "Normal surface",
+      "pred_class_id": 4,
+      "pred_class_name": "Normal surface",
+      "confidence": 0.9723,
+      "gt_bbox_cxcywh": [
+        0.5,
+        0.5,
+        0.85156,
+        0.85156
+      ],
+      "pred_bbox_cxcywh": [
+        0.49885,
+        0.49703,
+        0.85329,
+        0.87263
+      ],
+      "iou": 0.9732
+    },
+    {
+      "filename": "smoke_test_c4_04.png",
+      "gt_class_id": 4,
+      "gt_class_name": "Normal surface",
+      "pred_class_id": 4,
+      "pred_class_name": "Normal surface",
+      "confidence": 0.9727,
+      "gt_bbox_cxcywh": [
+        0.5,
+        0.5,
+        0.85156,
+        0.85156
+      ],
+      "pred_bbox_cxcywh": [
+        0.49831,
+        0.49231,
+        0.86767,
+        0.87427
+      ],
+      "iou": 0.9559
+    }
+  ]
+}

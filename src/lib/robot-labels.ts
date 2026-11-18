@@ -1,9 +1,9 @@
 export function moduleTypeLabel(type: string) {
   const labels: Record<string, string> = {
-    Cleaning: "โมดูลทำความสะอาด",
-    Inspection: "โมดูลตรวจสอบ",
-    "Thermal Inspection": "โมดูลตรวจสอบความร้อน",
-    Advertising: "โมดูลโฆษณา/ประกาศ",
+    Cleaning: "ชุดปฏิบัติการทำความสะอาด",
+    Inspection: "ชุดปฏิบัติการตรวจสอบ",
+    "Thermal Inspection": "ชุดปฏิบัติการตรวจสอบความร้อน",
+    Advertising: "ชุดปฏิบัติการโฆษณา/ประกาศ",
   };
 
   return labels[type] ?? type;

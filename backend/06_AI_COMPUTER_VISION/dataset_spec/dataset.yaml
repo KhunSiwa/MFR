@@ -1,0 +1,23 @@
+# MFR Facade Defect Detection — Local YOLO Dataset Configuration
+# WARNING: Currently points strictly to the deterministic procedural smoke-test fixture
+# (SMOKE_TEST_FIXTURE_ONLY). Zero real labeled facade defect images exist in
+# /Users/Siwakorn/Downloads/mfr/source/photos_PLACEHOLDER/ as of 2026-11-14.
+# Real facade accuracy = NOT TRAINED / NOT EVALUATED.
+
+path: /Users/Siwakorn/Downloads/mfr/MFR_MASTER/06_AI_COMPUTER_VISION/dataset_spec/smoke_fixture
+train: images/train
+val: images/val
+test: images/test
+
+nc: 5
+names:
+  0: Crack
+  1: Sealant deterioration
+  2: Rust / corrosion
+  3: Water stain
+  4: Normal surface
+
+# Governance metadata (non-YOLO custom keys ignored by standard parsers)
+mfr_dataset_tier: SMOKE_TEST_FIXTURE_ONLY
+mfr_real_facade_images: 0
+mfr_advisory_only: true
