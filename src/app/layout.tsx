@@ -13,8 +13,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "M.F.R. | แพลตฟอร์มสุขภาพผิวอาคารอัจฉริยะ",
   description:
-    "Module Facade Rover คือแพลตฟอร์มหุ่นยนต์ AI สำหรับตรวจสอบผิวอาคาร บำรุงรักษาเชิงคาดการณ์ และวิเคราะห์ข้อมูลอาคารอัจฉริยะ",
-  keywords: ["M.F.R.", "Module Facade Rover", "หุ่นยนต์ AI", "ตรวจสอบผิวอาคาร", "i-NEW GEN"],
+    "Modular Facade Rover คือแพลตฟอร์มหุ่นยนต์ AI สำหรับตรวจสอบผิวอาคาร บำรุงรักษาเชิงคาดการณ์ และวิเคราะห์ข้อมูลอาคารอัจฉริยะ",
+  keywords: ["M.F.R.", "Modular Facade Rover", "หุ่นยนต์ AI", "ตรวจสอบผิวอาคาร", "i-NEW GEN"],
   openGraph: {
     title: "M.F.R. แพลตฟอร์มสุขภาพผิวอาคารอัจฉริยะ",
     description: "หุ่นยนต์ฐานกลางพร้อมชุดปฏิบัติการสลับได้ AI inspection, predictive maintenance และ smart building analytics",

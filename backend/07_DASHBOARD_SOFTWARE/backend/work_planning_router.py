@@ -38,6 +38,7 @@ CV_ROOT = MFR_MASTER_ROOT / "06_AI_COMPUTER_VISION"
 CAPTURES_DIR = (M7_ROOT / "database" / "captures").resolve()
 CAPTURES_DIR.mkdir(parents=True, exist_ok=True)
 SMOKE_SAMPLE = (CV_ROOT / "dataset_spec" / "smoke_fixture" / "images" / "test").resolve()
+AUDIT_SAMPLE = (CV_ROOT / "dataset_spec" / "real_curtainwall_unlabeled_audit").resolve()
 
 for _p in (str(M7_ROOT), str(CV_ROOT / "inference_api"), str(HW_CODE_ROOT)):
     if _p not in sys.path:
@@ -495,15 +496,25 @@ def capture_inspection_image(payload: CaptureRequestIn, db: Session = Depends(ge
             sha = hashlib.sha256(raw).hexdigest()
         except Exception as exc:  # noqa: BLE001
             raise HTTPException(status_code=400, detail=f"Failed to decode camera snapshot: {exc}") from exc
+    elif payload.sample_name:
+        safe_name = Path(payload.sample_name).name
+        audit_cand = (AUDIT_SAMPLE / safe_name).resolve()
+        smoke_cand = (SMOKE_SAMPLE / safe_name).resolve()
+        chosen = audit_cand if audit_cand.exists() else (smoke_cand if smoke_cand.exists() else None)
+        if chosen is None:
+            raise HTTPException(status_code=404, detail=f"Requested facade sample '{safe_name}' not found.")
+        raw = chosen.read_bytes()
+        arr = np.frombuffer(raw, dtype=np.uint8)
+        img = cv2.imdecode(arr, cv2.IMREAD_COLOR)
+        if img is None:
+            raise HTTPException(status_code=400, detail=f"Sample '{safe_name}' is not a valid image.")
+        h, w = img.shape[:2]
+        cam_src = "CURTAINWALL_AUDIT_SAMPLE" if chosen == audit_cand else "SMOKE_FIXTURE_SAMPLE"
+        sha = hashlib.sha256(raw).hexdigest()
     else:
-        # Source 2: Optional smoke fixture sample OR live OpenCV host USB webcam
+        # Source 2: Live OpenCV host USB webcam (or deterministic smoke fallback when disconnected)
         fallback_path: Optional[Path] = None
-        if payload.sample_name and SMOKE_SAMPLE.exists():
-            cand = (SMOKE_SAMPLE / Path(payload.sample_name).name).resolve()
-            if cand.exists():
-                fallback_path = cand
-        elif SMOKE_SAMPLE.exists():
-            # Pick deterministic sample image when webcam hardware is disconnected cleanly
+        if SMOKE_SAMPLE.exists():
             samples = sorted(SMOKE_SAMPLE.glob("*.png"))
             if samples:
                 fallback_path = samples[(panel.id - 1) % len(samples)]

@@ -67,7 +67,7 @@ function buildAiReply(message: string) {
     return `พบปัญหาซิลิโคน ${silicone.length} รายการ ควรเร่งดูจุดที่มีความเสี่ยงน้ำรั่วซึม โดยเฉพาะรายการความรุนแรงสูง และตั้งภารกิจตรวจซ้ำหลังซ่อม`;
   }
 
-  if (matches(input, ["module", "โมดูล", "ชุดปฏิบัติการ", "cleaning", "solar", "inspection"])) {
+  if (matches(input, ["module", "โมดูล่า", "โมดูล", "ชุดปฏิบัติการ", "cleaning", "solar", "inspection"])) {
     return [
       `แพลตฟอร์มตอนนี้ติดตั้งอยู่: ${robotPlatform.installedModule}.`,
       `มีชุดปฏิบัติการทั้งหมด ${robotModules.length} รายการ: ${robotModules.map((module) => `${module.name} (${moduleStatusLabel(module.status)})`).join(", ")}`,

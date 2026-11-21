@@ -125,6 +125,7 @@ export function WorkPlanningConsole() {
   const [camMessage, setCamMessage] = useState("USB Webcam: Ready to connect host/browser or capture diagnostic fixture.");
   const [activeSessionId, setActiveSessionId] = useState<number | null>(null);
   const [positionMode, setPositionMode] = useState<"MANUAL_ASSIGNED" | "ESTIMATED">("MANUAL_ASSIGNED");
+  const [capturePreset, setCapturePreset] = useState<string>("S04_audit_tile_00.png");
   const [autoIntervalSec, setAutoIntervalSec] = useState<number>(0);
   const [busyAction, setBusyAction] = useState(false);
 
@@ -316,7 +317,7 @@ export function WorkPlanningConsole() {
       setBusyAction(true);
       setNotice(null);
       try {
-        const snap = customBase64 ?? grabBrowserSnapshotBase64();
+        const snap = customBase64 ?? (capturePreset === "LIVE_WEBCAM" ? grabBrowserSnapshotBase64() : undefined);
         const capRes = await fetch("/api/mfr/inspection/capture", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -327,6 +328,7 @@ export function WorkPlanningConsole() {
             facade_code: selectedPanel.face_code,
             floor_number: selectedPanel.floor_number,
             position_mode: positionMode,
+            sample_name: !snap && capturePreset !== "LIVE_WEBCAM" ? capturePreset : undefined,
             image_base64: snap,
             allow_fallback: true,
           }),
@@ -358,7 +360,7 @@ export function WorkPlanningConsole() {
       }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [activeSessionId, building, camLive, loadAll, positionMode, selectedPanel],
+    [activeSessionId, building, camLive, capturePreset, loadAll, positionMode, selectedPanel],
   );
 
   // Interval automatic capture when enabled
@@ -856,7 +858,7 @@ export function WorkPlanningConsole() {
             </div>
 
             <div className="space-y-4">
-              <div className="grid gap-3 sm:grid-cols-3">
+              <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
                 <div className="rounded-xl border border-slate-200 p-3 text-xs dark:border-white/10">
                   <div className="text-slate-500">Target Building / Panel</div>
                   <div className="mt-1 font-semibold">{selectedPanel ? `${selectedPanel.panel_code} (${selectedPanel.face_code} F${selectedPanel.floor_number})` : "—"}</div>
@@ -870,6 +872,23 @@ export function WorkPlanningConsole() {
                   >
                     <option value="MANUAL_ASSIGNED">MANUAL_ASSIGNED</option>
                     <option value="ESTIMATED">ESTIMATED (No SLAM)</option>
+                  </select>
+                </div>
+                <div className="rounded-xl border border-slate-200 p-3 text-xs dark:border-white/10">
+                  <div className="text-slate-500">Image Source / Preset</div>
+                  <select
+                    value={capturePreset}
+                    onChange={(e) => setCapturePreset(e.target.value)}
+                    className="mt-1 w-full rounded-lg border border-slate-200 bg-white px-2 py-1 font-semibold dark:border-white/10 dark:bg-slate-900"
+                  >
+                    <option value="S04_audit_tile_00.png">Curtain Wall Facade #1</option>
+                    <option value="S04_audit_tile_01.png">Curtain Wall Facade #2</option>
+                    <option value="smoke_test_c0_00.png">Fixture: Crack</option>
+                    <option value="smoke_test_c1_00.png">Fixture: Sealant</option>
+                    <option value="smoke_test_c2_00.png">Fixture: Rust</option>
+                    <option value="smoke_test_c3_00.png">Fixture: Water Stain</option>
+                    <option value="smoke_test_c4_00.png">Fixture: Normal Glass</option>
+                    <option value="LIVE_WEBCAM">Live USB / Host Webcam</option>
                   </select>
                 </div>
                 <div className="rounded-xl border border-slate-200 p-3 text-xs dark:border-white/10">
@@ -937,7 +956,7 @@ export function WorkPlanningConsole() {
                     className="mt-1 h-9 w-full rounded-xl border border-slate-200 bg-white px-2.5 dark:border-white/10 dark:bg-slate-900"
                   >
                     <option value="INSPECTION">INSPECTION (สำรวจ/บันทึกภาพ)</option>
-                    <option value="CLEANING">CLEANING (ทำความสะอาดด้วยโมดูลปั๊ม)</option>
+                    <option value="CLEANING">CLEANING (ทำความสะอาดด้วยโมดูล่าปั๊ม)</option>
                   </select>
                 </label>
                 <label className="block font-medium">

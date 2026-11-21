@@ -15,17 +15,27 @@ const productHighlights = [
 
 export function LoginPage() {
   const router = useRouter();
-  const [email, setEmail] = useState("demo@mfr.ai");
-  const [password, setPassword] = useState("mfr-demo");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   function enterApp(mode: "login" | "sign-in") {
-    window.localStorage.setItem("mfr-session", JSON.stringify({ email, loginAt: new Date().toISOString() }));
+    const trimmedEmail = email.trim();
+    if (!trimmedEmail || !password.trim()) {
+      setError("กรุณากรอกอีเมลและรหัสผ่านให้ครบถ้วน");
+      return;
+    }
+    setError("");
+    window.localStorage.setItem("mfr-session", JSON.stringify({ email: trimmedEmail, loginAt: new Date().toISOString() }));
     window.localStorage.setItem("mfr-auth-mode", mode);
     router.push("/home");
   }
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (!event.currentTarget.reportValidity()) {
+      return;
+    }
     enterApp("login");
   }
 
@@ -41,7 +51,7 @@ export function LoginPage() {
             </span>
             <div>
               <div className="text-sm font-semibold">M.F.R.</div>
-              <div className="text-xs text-slate-500 dark:text-slate-400">ระบบ Module Facade Rover</div>
+              <div className="text-xs text-slate-500 dark:text-slate-400">ระบบ Modular Facade Rover</div>
             </div>
           </div>
           <ThemeToggle />
@@ -54,7 +64,7 @@ export function LoginPage() {
               แพลตฟอร์มสุขภาพผิวอาคารอัจฉริยะ
             </div>
             <h1 className="mt-7 text-5xl font-semibold leading-[0.95] tracking-tight sm:text-7xl">
-              M.F.R. Module Facade Rover
+              M.F.R. Modular Facade Rover
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-300">
               หน้าแรกนี้เป็นเพียงหน้าแนะนำสินค้าและรายละเอียดงานของบริษัท: หุ่นยนต์ฐานกลางพร้อมชุดปฏิบัติการสำหรับตรวจสอบ ทำความสะอาด วิเคราะห์ AI และรองรับการบำรุงรักษาเชิงคาดการณ์สำหรับอาคารอัจฉริยะ
@@ -70,7 +80,11 @@ export function LoginPage() {
                   id="email"
                   type="email"
                   value={email}
-                  onChange={(event) => setEmail(event.target.value)}
+                  onChange={(event) => {
+                    setEmail(event.target.value);
+                    if (error) setError("");
+                  }}
+                  placeholder="กรอกอีเมลของคุณ"
                   className="w-full bg-transparent text-sm outline-none"
                   autoComplete="email"
                   required
@@ -86,12 +100,22 @@ export function LoginPage() {
                   id="password"
                   type="password"
                   value={password}
-                  onChange={(event) => setPassword(event.target.value)}
+                  onChange={(event) => {
+                    setPassword(event.target.value);
+                    if (error) setError("");
+                  }}
+                  placeholder="กรอกรหัสผ่าน"
                   className="w-full bg-transparent text-sm outline-none"
                   autoComplete="current-password"
                   required
                 />
               </div>
+
+              {error ? (
+                <p className="mt-3 text-xs font-medium text-rose-600 dark:text-rose-400" role="alert">
+                  {error}
+                </p>
+              ) : null}
 
               <Button type="submit" className="mt-5 h-12 w-full rounded-2xl text-base">
                 เข้าสู่ระบบ
@@ -101,7 +125,13 @@ export function LoginPage() {
                 type="button"
                 variant="secondary"
                 className="mt-3 h-12 w-full rounded-2xl text-base"
-                onClick={() => enterApp("sign-in")}
+                onClick={(event) => {
+                  const form = event.currentTarget.form;
+                  if (form && !form.reportValidity()) {
+                    return;
+                  }
+                  enterApp("sign-in");
+                }}
               >
                 ลงชื่อเข้าใช้
                 <ArrowRight className="h-4 w-4" aria-hidden />
@@ -111,12 +141,12 @@ export function LoginPage() {
 
           <div className="relative hidden lg:block">
             <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-blue-600/20 via-cyan-400/20 to-transparent blur-2xl" />
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/60 bg-white/60 shadow-2xl shadow-cyan-950/10 backdrop-blur dark:border-white/10 dark:bg-white/[0.06]">
-              <RobotHeroSlider className="h-[34rem] w-full" priority />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
-              <div className="absolute left-5 right-5 top-5 flex items-center justify-between rounded-3xl border border-white/10 bg-slate-950/60 p-4 text-white backdrop-blur">
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/60 bg-slate-950 shadow-2xl shadow-cyan-950/10 backdrop-blur dark:border-white/10">
+              <RobotHeroSlider className="aspect-video w-full" priority />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/75 via-transparent to-slate-950/35" />
+              <div className="absolute left-4 right-4 top-4 flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/60 px-4 py-3 text-white backdrop-blur">
                 <div className="flex items-center gap-3">
-                  <Sparkles className="h-7 w-7 text-cyan-300" aria-hidden />
+                  <Sparkles className="h-6 w-6 text-cyan-300" aria-hidden />
                   <div>
                     <div className="text-sm font-semibold">ตัวอย่างผลิตภัณฑ์บริษัท</div>
                     <div className="text-xs text-slate-300">หุ่นยนต์ AI สำหรับผิวอาคารอัจฉริยะ</div>
@@ -126,11 +156,11 @@ export function LoginPage() {
                   สาธารณะ
                 </span>
               </div>
-              <div className="absolute bottom-5 left-5 right-5 grid grid-cols-3 gap-3">
+              <div className="absolute bottom-8 left-4 right-4 grid grid-cols-3 gap-2.5">
                 {productHighlights.map((item) => (
-                  <div key={item.label} className="rounded-3xl border border-white/10 bg-white/10 p-4 text-white shadow-xl backdrop-blur-xl">
-                    <item.icon className="h-7 w-7 text-cyan-200" aria-hidden />
-                    <div className="mt-3 text-sm font-semibold">{item.label}</div>
+                  <div key={item.label} className="rounded-2xl border border-white/10 bg-white/10 px-3 py-2.5 text-white shadow-xl backdrop-blur-xl">
+                    <item.icon className="h-5 w-5 text-cyan-200" aria-hidden />
+                    <div className="mt-1.5 text-xs font-semibold">{item.label}</div>
                   </div>
                 ))}
               </div>

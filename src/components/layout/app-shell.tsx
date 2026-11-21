@@ -37,7 +37,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             </span>
             <span>
               <span className="block text-sm font-semibold">ศูนย์ควบคุม M.F.R.</span>
-              <span className="block text-xs text-slate-500 dark:text-slate-400">ระบบ Module Facade Rover</span>
+              <span className="block text-xs text-slate-500 dark:text-slate-400">ระบบ Modular Facade Rover</span>
             </span>
           </Link>
 
@@ -74,6 +74,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             </div>
             <Link
               href="/"
+              onClick={() => {
+                window.localStorage.removeItem("mfr-session");
+                window.localStorage.removeItem("mfr-auth-mode");
+              }}
               className="mt-3 flex h-10 items-center justify-center gap-2 rounded-2xl border border-slate-200 text-sm font-medium text-slate-600 transition hover:bg-slate-100 dark:border-white/10 dark:text-slate-300 dark:hover:bg-white/10"
             >
               <LogOut className="h-4 w-4" aria-hidden />
