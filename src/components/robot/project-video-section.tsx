@@ -22,7 +22,7 @@ export function ProjectVideoSection({ compact = false }: { compact?: boolean }) 
             วิดีโอนำเสนอผลงาน M.F.R. (Modular Facade Rover)
           </h2>
           <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
-            แนะนำตัวทีมผู้พัฒนาโรงเรียนอัสสัมชัญธนบุรี แนวคิดหุ่นยนต์แบบโมดูลาร์ ระบบ AI วิเคราะห์ผิวอาคาร และแพลตฟอร์มเว็บ (ความยาว 02:47 นาที · ซับไตเติลภาษาไทย)
+            แนะนำตัวทีมผู้พัฒนาโรงเรียนอัสสัมชัญธนบุรี แนวคิดหุ่นยนต์แบบโมดูลาร์ ระบบ AI วิเคราะห์ผิวอาคาร และแพลตฟอร์มเว็บ (ความยาว 02:50 นาที · ซับไตเติลภาษาไทย)
           </p>
         </div>
         <span className="rounded-full border border-cyan-500/25 bg-cyan-500/10 px-3 py-1 text-xs font-semibold text-cyan-700 dark:text-cyan-200">

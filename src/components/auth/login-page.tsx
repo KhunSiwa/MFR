@@ -20,7 +20,17 @@ export function LoginPage() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  function enterApp(mode: "login" | "sign-in") {
+  function enterApp(mode: "login" | "sign-in" | "demo") {
+    if (mode === "demo") {
+      setError("");
+      window.localStorage.setItem(
+        "mfr-session",
+        JSON.stringify({ email: "demo-visitor@mfr.ai", loginAt: new Date().toISOString(), role: "demo" }),
+      );
+      window.localStorage.setItem("mfr-auth-mode", "demo");
+      router.push("/home");
+      return;
+    }
     const trimmedEmail = email.trim();
     if (!trimmedEmail || !password.trim()) {
       setError("กรุณากรอกอีเมลและรหัสผ่านให้ครบถ้วน");
@@ -136,6 +146,20 @@ export function LoginPage() {
               >
                 ลงชื่อเข้าใช้
                 <ArrowRight className="h-4 w-4" aria-hidden />
+              </Button>
+              <div className="my-3 flex items-center gap-3 text-xs text-slate-400 dark:text-slate-500">
+                <span className="h-px flex-1 bg-slate-200 dark:bg-white/10" />
+                <span>หรือ</span>
+                <span className="h-px flex-1 bg-slate-200 dark:bg-white/10" />
+              </div>
+              <Button
+                type="button"
+                variant="ghost"
+                className="h-11 w-full rounded-2xl border border-cyan-500/30 bg-cyan-500/10 text-sm font-semibold text-cyan-700 hover:bg-cyan-500/20 dark:text-cyan-200 dark:hover:bg-cyan-400/20"
+                onClick={() => enterApp("demo")}
+              >
+                <Sparkles className="h-4 w-4" aria-hidden />
+                เข้าชมเว็บไซต์แบบ Demo (ไม่ต้องกรอกรหัส)
               </Button>
             </form>
           </div>
