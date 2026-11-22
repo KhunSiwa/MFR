@@ -6,6 +6,7 @@ import { ArrowRight, Bot, BrainCircuit, Building2, LockKeyhole, Mail, ShieldChec
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { RobotHeroSlider } from "@/components/robot/robot-hero-slider";
+import { ProjectVideoSection } from "@/components/robot/project-video-section";
 
 const productHighlights = [
   { label: "หุ่นยนต์ชุดปฏิบัติการ", icon: Bot },
@@ -167,6 +168,10 @@ export function LoginPage() {
             </div>
           </div>
         </section>
+
+        <div className="mx-auto w-full max-w-7xl pb-10">
+          <ProjectVideoSection compact />
+        </div>
       </div>
     </main>
   );

@@ -5,6 +5,7 @@ import { aiRecommendations, homeKpis, mvpMetrics } from "@/features/mfr/constant
 import { Button } from "@/components/ui/button";
 import { PageHeader } from "@/components/layout/page-header";
 import { RobotHeroSlider } from "@/components/robot/robot-hero-slider";
+import { ProjectVideoSection } from "@/components/robot/project-video-section";
 import { db } from "@/data/api";
 import { formatDate } from "@/lib/utils";
 
@@ -41,6 +42,8 @@ export default function HomePage() {
       <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
         {homeKpis.map((item) => <StatCard key={item.label} {...item} />)}
       </div>
+
+      <ProjectVideoSection />
 
       <div className="grid gap-5 xl:grid-cols-[360px_minmax(0,1fr)]">
         <HealthCard score={mvpMetrics.surfaceHealth} risk={mvpMetrics.riskLevel} />
