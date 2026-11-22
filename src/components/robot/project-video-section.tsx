@@ -38,7 +38,7 @@ export function ProjectVideoSection({ compact = false }: { compact?: boolean }) 
           poster={`${basePath}/images/mfr-hero-rover.png`}
           className="aspect-video w-full bg-slate-950 object-contain"
         >
-          <source src={`${basePath}/videos/52171_MFR_Video.mp4`} type="video/mp4" />
+          <source src={`${basePath}/videos/52171_MFR_Video.mp4?v=20261122-2116`} type="video/mp4" />
           เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ HTML5
         </video>
       </div>
