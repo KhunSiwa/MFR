@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[39435,["658","static/chunks/658-46efe8b1d88d51be.js","650","static/chunks/650-9de179fc504390ad.js","662","static/chunks/app/settings/page-3eb962230042593a.js"],"SettingsPanel"]
+3:I[90484,[],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"space-y-8","children":[["$","div",null,{"className":"mb-6 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between","children":[["$","div",null,{"children":[["$","div",null,{"className":"mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-600","children":"ตั้งค่า"}],["$","h1",null,{"className":"max-w-4xl text-2xl font-semibold tracking-normal text-slate-950 sm:text-3xl dark:text-white","children":"ตั้งค่า"}],["$","p",null,{"className":"mt-2 max-w-3xl text-sm leading-6 text-slate-500 dark:text-slate-400","children":"โหมดมืด การแจ้งเตือน การตั้งค่าหุ่นยนต์ บัญชี ธีม ภาษา และระบบ"}]]}],null]}],["$","$L2",null,{}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QEQv2HDOMWG83Qj_GH9oA"}
+5:null
